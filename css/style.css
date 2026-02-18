@@ -1,0 +1,413 @@
+/* ===================================
+   RTL/LTR Mixed Text Direction Fixes
+   === إصلاح مشاكل اتجاه النصوص ===
+   =================================== */
+
+/* Fix for mixed Arabic and English text */
+html {
+    direction: rtl;
+}
+
+body {
+    direction: rtl;
+}
+
+/* English text within Arabic context */
+.english, 
+span.english,
+em.english,
+strong.english {
+    direction: ltr;
+    unicode-bidi: embed;
+    display: inline-block;
+    margin: 0 2px;
+}
+
+/* Brand names that should be in LTR */
+.brand,
+.company-name {
+    direction: ltr;
+    unicode-bidi: embed;
+    display: inline-block;
+}
+
+/* For inline code or technical terms */
+code,
+.code {
+    direction: ltr;
+    unicode-bidi: embed;
+    font-family: 'Courier New', monospace;
+}
+
+/* Phone numbers should be LTR */
+.phone,
+.tel {
+    direction: ltr;
+    unicode-bidi: embed;
+    display: inline-block;
+}
+
+/* Email addresses should be LTR */
+.email,
+a[href^="mailto:"] {
+    direction: ltr;
+    unicode-bidi: embed;
+    display: inline-block;
+}
+
+/* Dates should be LTR */
+.date,
+time {
+    direction: ltr;
+    unicode-bidi: embed;
+    display: inline-block;
+}
+
+/* URLs should be LTR */
+.url,
+a[href*="http"],
+a[href*="www"] {
+    direction: ltr;
+    unicode-bidi: embed;
+}
+
+/* Numbers in general */
+.number,
+.price {
+    direction: ltr;
+    unicode-bidi: embed;
+    display: inline-block;
+}
+
+/* Fix for paragraphs with mixed text */
+p {
+    text-align: justify;
+}
+
+/* Lists should maintain proper direction */
+ul, ol {
+    direction: rtl;
+}
+
+ul li, ol li {
+    direction: rtl;
+    text-align: right;
+}
+
+/* Fix for input fields and textareas */
+input,
+textarea,
+select {
+    direction: rtl;
+}
+
+input[type="email"],
+input[type="url"],
+input[type="tel"] {
+    direction: ltr;
+    text-align: left;
+}
+
+/* Table direction fix */
+table {
+    direction: rtl;
+}
+
+/* Fix for navigation and headers with mixed content */
+header,
+nav {
+    direction: rtl;
+}
+
+header a,
+nav a {
+    direction: rtl;
+}
+
+/* Footer direction */
+footer {
+    direction: rtl;
+}
+
+/* Fix specific company name (Aura) when appears with Arabic text */
+h1 .english,
+h2 .english,
+h3 .english,
+h4 .english,
+h5 .english,
+h6 .english {
+    display: inline-block;
+    direction: ltr;
+    unicode-bidi: embed;
+    margin: 0 2px;
+}
+
+/* For quotations with mixed text */
+blockquote {
+    direction: rtl;
+    padding-right: 20px;
+    border-right: 4px solid #B9A25A;
+}
+
+/* Buttons with text */
+button,
+a.btn,
+.cta-btn {
+    direction: rtl;
+    text-align: center;
+}
+
+/* Messages and alerts */
+.alert,
+.notification,
+.message {
+    direction: rtl;
+    text-align: right;
+}
+
+/* Cards with mixed content */
+.card,
+.feature-card {
+    direction: rtl;
+}
+
+.card p,
+.feature-card p {
+    text-align: right;
+}
+
+/* Modal dialogs */
+.modal,
+.dialog {
+    direction: rtl;
+}
+
+/* Badges and tags */
+.badge,
+.tag,
+.label {
+    direction: ltr;
+    unicode-bidi: embed;
+    display: inline-block;
+}
+
+/* Form labels */
+label {
+    direction: rtl;
+    display: block;
+    text-align: right;
+    margin-bottom: 8px;
+}
+
+/* Ensure proper spacing around English text in Arabic context */
+.text-mixed {
+    word-spacing: normal;
+    letter-spacing: normal;
+}
+
+/* Fix for headings with mixed content */
+.heading-mixed,
+h1.mixed,
+h2.mixed,
+h3.mixed {
+    direction: rtl;
+    text-align: center;
+}
+
+/* Hero section text alignment */
+.hero h1,
+.hero h2,
+.hero h3,
+.hero p {
+    text-align: center;
+    direction: rtl;
+}
+
+/* Section titles */
+.section-title {
+    text-align: center;
+    direction: rtl;
+}
+
+/* Feature descriptions */
+.feature-card h3,
+.feature-card p {
+    text-align: center;
+    direction: rtl;
+}
+
+/* Ensure proper layout for breadcrumbs */
+.breadcrumb {
+    direction: rtl;
+    text-align: right;
+}
+
+.breadcrumb li {
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.breadcrumb li:before {
+    content: " / ";
+    margin-right: 5px;
+}
+
+/* Pagination */
+.pagination {
+    direction: rtl;
+    text-align: center;
+}
+
+.pagination li {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+/* Footer links and text */
+footer p,
+footer a {
+    direction: rtl;
+    text-align: right;
+}
+
+/* Contact information */
+.contact-info,
+.contact-details {
+    direction: rtl;
+    text-align: right;
+}
+
+.contact-info .phone,
+.contact-info .email,
+.contact-details .phone,
+.contact-details .email {
+    direction: ltr;
+    unicode-bidi: embed;
+    display: inline-block;
+    text-align: left;
+}
+
+/* Timeline */
+.timeline-item {
+    direction: rtl;
+}
+
+.timeline-item .content {
+    text-align: right;
+}
+
+/* Ensure proper handling of abbreviations and acronyms */
+abbr,
+acronym {
+    direction: ltr;
+    unicode-bidi: embed;
+    display: inline-block;
+}
+
+/* Fix for data attributes that might contain English */
+[data-*],
+[aria-label] {
+    direction: rtl;
+}
+
+/* Tooltip text direction */
+.tooltip {
+    direction: rtl;
+}
+
+/* Ensure text in emphasis tags */
+em, i {
+    direction: rtl;
+}
+
+em.english,
+i.english {
+    direction: ltr;
+    unicode-bidi: embed;
+}
+
+/* Strong emphasis */
+strong, b {
+    direction: rtl;
+}
+
+strong.english,
+b.english {
+    direction: ltr;
+    unicode-bidi: embed;
+}
+
+/* Additional utility classes for mixed content */
+.ltr {
+    direction: ltr;
+    unicode-bidi: embed;
+    display: inline-block;
+}
+
+.rtl {
+    direction: rtl;
+    unicode-bidi: embed;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* Ensure proper spacing and margins for mixed text elements */
+.mixed-text {
+    word-spacing: normal;
+    letter-spacing: normal;
+    line-height: 1.8;
+}
+
+/* Fix for numbers in RTL context */
+.number-rtl {
+    direction: ltr;
+    unicode-bidi: embed;
+    display: inline-block;
+}
+
+/* Ensure proper display of fractions and mathematical expressions */
+.math, 
+.formula {
+    direction: ltr;
+    unicode-bidi: embed;
+    display: inline-block;
+    font-family: 'Courier New', monospace;
+}
+
+/* Project names and titles with mixed content */
+.project-title,
+.product-name {
+    direction: rtl;
+}
+
+.project-title .english,
+.product-name .english {
+    direction: ltr;
+    unicode-bidi: embed;
+    display: inline-block;
+}
+
+/* Proper spacing for brand names */
+.brand-name {
+    direction: ltr;
+    unicode-bidi: embed;
+    display: inline-block;
+    font-weight: bold;
+}
+
+/* Ensure proper rendering of complex sentences with mixed script */
+.complex-text {
+    font-size: 16px;
+    line-height: 1.8;
+    word-spacing: normal;
+}
