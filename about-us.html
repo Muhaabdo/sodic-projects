@@ -1,0 +1,609 @@
+﻿<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>عن الشركة - Univers Estate</title>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-KRH3CHJ5');</script>
+    <!-- End Google Tag Manager -->
+    <link rel="stylesheet" href="css/header-footer.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            color: #333;
+            background-color: #EAEAEA;
+        }
+
+        header {
+            background-color: #000000;
+            padding: 20px 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            transition: transform 0.3s ease;
+        }
+
+        header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: white;
+            flex-shrink: 0;
+        }
+
+        header nav {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            flex-grow: 1;
+            justify-content: center;
+        }
+
+        header nav a {
+            text-decoration: none;
+            color: white;
+            font-size: 14px;
+            transition: color 0.3s;
+        }
+
+        .call-btn {
+            background-color: #B9A25A;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s;
+            white-space: nowrap;
+        }
+
+        .call-btn:hover {
+            background-color: #9B8847;
+        }
+
+        /* Dropdown Menu */
+        .nav-dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-toggle {
+            margin-left: 30px;
+            text-decoration: none;
+            color: white;
+            font-size: 14px;
+            transition: color 0.3s;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .dropdown-toggle:hover {
+            color: #B9A25A;
+        }
+
+        .dropdown-menu {
+            position: absolute;
+            top: 100%;
+            right: 0;
+            background-color: white;
+            border-radius: 4px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            min-width: 200px;
+            padding: 10px 0;
+            display: none;
+            z-index: 100;
+            margin-top: 10px;
+        }
+
+        .nav-dropdown:hover .dropdown-menu {
+            display: block;
+        }
+
+        .dropdown-menu a {
+            display: block;
+            padding: 12px 20px;
+            color: #000000;
+            text-decoration: none;
+            font-size: 14px;
+            transition: all 0.3s;
+            margin: 0;
+        }
+
+        .dropdown-menu a:hover {
+            background-color: #EAEAEA;
+            color: #B9A25A;
+            padding-right: 25px;
+        }
+
+        .hero {
+            background: linear-gradient(rgba(185, 162, 90, 0.7), rgba(185, 162, 90, 0.7)), url('images/hero.jpg') center/cover no-repeat;
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+            min-height: 500px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        section.container {
+            display: block;
+            width: 100%;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 36px;
+            font-weight: bold;
+            margin: 60px 0 40px;
+            color: #B9A25A;
+        }
+
+        .content-section {
+            background: white;
+            padding: 40px;
+            margin-bottom: 60px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            line-height: 1.8;
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 900px;
+        }
+
+        .content-section h2 {
+            color: #B9A25A;
+            margin-bottom: 20px;
+            font-size: 28px;
+        }
+
+        .content-section p {
+            color: #666;
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+            margin: 60px 0;
+        }
+
+        .stat-card {
+            background: linear-gradient(135deg, #B9A25A 0%, #D4B896 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .stat-card .number {
+            font-size: 36px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .stat-card p {
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        /* Mobile Menu */
+        .menu-toggle {
+            background: none;
+            border: none;
+            color: white;
+            font-size: 28px;
+            cursor: pointer;
+            padding: 5px 10px;
+            transition: transform 0.3s;
+            flex-shrink: 0;
+        }
+
+        .menu-toggle:hover {
+            transform: scale(1.1);
+        }
+
+        .mobile-menu {
+            position: fixed;
+            top: 0;
+            right: -100%;
+            width: 80%;
+            max-width: 400px;
+            height: 100vh;
+            background-color: #000000;
+            padding: 100px 20px 20px;
+            transition: right 0.3s ease-in-out;
+            z-index: 99;
+            overflow-y: auto;
+            box-shadow: -2px 0 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .mobile-menu.active {
+            right: 0;
+        }
+
+        .mobile-menu a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            padding: 15px 0;
+            font-size: 18px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s;
+        }
+
+        .mobile-menu a:hover {
+            background-color: rgba(0, 0, 0, 0.1);
+            padding-right: 10px;
+        }
+
+        .menu-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 98;
+        }
+
+        .menu-overlay.active {
+            display: block;
+        }
+
+        header.hidden {
+            transform: translateY(-100%);
+        }
+
+        footer {
+            background-color: #000000;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            margin-top: 60px;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 32px;
+            }
+
+            .section-title {
+                font-size: 28px;
+            }
+
+            .content-section {
+                padding: 20px;
+            }
+
+            header nav {
+                display: none;
+            }
+
+            .menu-toggle {
+                display: block;
+            }
+        }
+
+        /* Hide nav on all devices */
+        header nav {
+            display: none !important;
+        }
+
+        /* WhatsApp Sticky Button */
+        .whatsapp-button {
+            position: fixed;
+            bottom: 30px;
+            left: 30px;
+            width: 60px;
+            height: 60px;
+            background-color: #25D366;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            color: white;
+            font-size: 30px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+            transition: all 0.3s ease;
+            z-index: 98;
+        }
+
+        .whatsapp-button:hover {
+            background-color: #20BA5C;
+            transform: scale(1.1);
+            box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
+        }
+
+        .whatsapp-button-label {
+            position: absolute;
+            bottom: 70px;
+            left: 0;
+            white-space: nowrap;
+            background-color: #25D366;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: bold;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.3s ease;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .whatsapp-button:hover .whatsapp-button-label {
+            opacity: 1;
+        }
+
+        @media (max-width: 768px) {
+            .whatsapp-button {
+                width: 55px;
+                height: 55px;
+                bottom: 20px;
+                left: 20px;
+                font-size: 26px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KRH3CHJ5"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo"><img src="images/condos-logo.png" alt="Condos Realty" style="height: 40px;"></div>
+            <nav>
+                <a href="index.html">الرئيسية</a>
+                <div class="nav-dropdown">
+                    <a href="projects.html" class="dropdown-toggle">المشاريع <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="projects.html">عرض المشاريع</a>
+                        <a href="palm-hills.html">بالم هيلز</a>
+                        <a href="silver-sands.html">سيلفر ساندز - Aura</a>
+                    </div>
+                </div>
+                <a href="about-us.html">عن الشركة</a>
+                <a href="contact-us.html">اتصل بنا</a>
+                <a href="privacy.html">سياسية الخصوصية</a>
+                <a href="disclaimer.html">إخلاء المسئولية</a>
+            </nav>
+            <button class="menu-toggle" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="menu-overlay" id="menuOverlay"></div>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="index.html">الرئيسية</a>
+        <a href="about-us.html">عن الشركة</a>
+        <a href="contact-us.html">اتصل بنا</a>
+        <a href="privacy.html">سياسية الخصوصية</a>
+        <a href="disclaimer.html">إخلاء المسئولية</a>
+        <a href="tel:01070000806" style="background-color: #B9A25A; color: white; padding: 12px 20px; border-radius: 4px; text-align: center; margin-top: 20px; display: block;"><i class="fas fa-phone"></i> اتصل الآن</a>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>عن Condos Realty</h1>
+            <p>شركة متخصصة في تطوير المشاريع السكنية الفاخرة</p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <div style="width: 100%; display: flex; justify-content: center; padding: 60px 20px;">
+        <div style="width: 100%; max-width: 900px;">
+            <div class="content-section">
+                <h2>من نحن؟</h2>
+                <p>
+                    <span class="english">Condos Realty</span> هي شركة متخصصة في التسويق والوساطة العقارية، نقوم بتسويق أفضل المشاريع السكنية والتجارية الفاخرة. 
+                    نحن نؤمن أن كل عميل يستحق منزلاً يعكس أحلامه وطموحاته.
+                </p>
+                <p>
+                    بفريق متخصص من الخبراء والمستشارين العقاريين المحترفين، نقدم استشارات شاملة وخدمات تسويقية احترافية لأفضل المشاريع في السوق.
+                </p>
+            </div>
+
+            <!-- Stats -->
+        <h2 class="section-title">خبرتنا</h2>
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="number">100+</div>
+                <p>مطور عقاري</p>
+            </div>
+            <div class="stat-card">
+                <div class="number">5000+</div>
+                <p>عميل راضٍ</p>
+            </div>
+            <div class="stat-card">
+                <div class="number">20+</div>
+                <p>سنة خبرة</p>
+            </div>
+            <div class="stat-card">
+                <div class="number">100%</div>
+                <p>رضا العملاء</p>
+            </div>
+        </div>
+
+        <!-- Mission Section -->
+        <div class="content-section">
+            <h2>رسالتنا</h2>
+            <p>
+                رسالتنا هي توفير أفضل خدمات التسويق والوساطة العقارية، والتواصل ما بين المشاريع الرائعة والعملاء المناسبين، 
+                مع الالتزام بأعلى معايير الشفافية والمصداقية والاحترافية.
+            </p>
+        </div>
+
+        <!-- Vision Section -->
+        <div class="content-section">
+            <h2>رؤيتنا</h2>
+            <p>
+                أن نكون الشركة الرائدة في مجال التسويق والوساطة العقارية بمصر، من خلال تقديم خدمات استشارية متخصصة 
+                وتسويق فعّال لأفضل المشاريع العقارية، مما يحقق أحلام ملكية المنزل للأسرة المصرية.
+            </p>
+        </div>
+
+        <!-- Values Section -->
+        <div class="content-section">
+            <h2>قيمنا</h2>
+            <ul style="list-style-position: inside; color: #666; margin-bottom: 15px;">
+                <li style="margin-bottom: 10px;"><strong>الشفافية:</strong> نتعامل بصراحة وصدق مع جميع عملائنا والمطورين</li>
+                <li style="margin-bottom: 10px;"><strong>الاحترافية:</strong> فريقنا لديه خبرة عميقة في السوق العقاري</li>
+                <li style="margin-bottom: 10px;"><strong>الاستشارة:</strong> نقدم نصائح مهنية مبنية على معرفة السوق</li>
+                <li style="margin-bottom: 10px;"><strong>المصداقية:</strong> علاقات قوية مع أفضل المطورين والعملاء</li>
+                <li style="margin-bottom: 10px;"><strong>العميل أولاً:</strong> رضا العميل هو أولويتنا الأساسية</li>
+            </ul>
+        </div>
+    </div>
+    </div>
+
+    <!-- Footer -->
+    <footer style="background-color: #000000 !important;">
+        <div class="container" style="padding: 40px 20px;">
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 40px; margin-bottom: 40px;">
+                <!-- Logo Section -->
+                <div>
+                    <img src="images/condos-logo.png" alt="Univers Estate" style="height: 50px; margin-bottom: 20px;">
+                    <p style="font-size: 14px; line-height: 1.8;">شركة Univers Estate متخصصة في التسويق والوساطة العقارية، نقدم أفضل المشاريع السكنية والتجارية الفاخرة في أفضل المواقع الاستراتيجية.</p>
+                </div>
+
+                <!-- Links Section -->
+                <div>
+                    <h4 style="margin-bottom: 20px; font-size: 16px;">الروابط السريعة</h4>
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="margin-bottom: 10px;"><a href="index.html" style="color: white; text-decoration: none;">الرئيسية</a></li>
+                        <li style="margin-bottom: 10px;"><a href="about-us.html" style="color: white; text-decoration: none;">عن الشركة</a></li>
+                        <li style="margin-bottom: 10px;"><a href="contact-us.html" style="color: white; text-decoration: none;">اتصل بنا</a></li>
+                        <li style="margin-bottom: 10px;"><a href="privacy.html" style="color: white; text-decoration: none;">سياسية الخصوصية</a></li>
+                        <li style="margin-bottom: 10px;"><a href="disclaimer.html" style="color: white; text-decoration: none;">إخلاء المسئولية</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Section -->
+                <div>
+                    <h4 style="margin-bottom: 20px; font-size: 16px;">تواصل معنا</h4>
+                    <p style="margin-bottom: 15px; font-size: 14px;">
+                        <i class="fas fa-phone" style="color: white; margin-left: 10px;"></i>
+                        <a href="tel:01070000806" style="color: white; text-decoration: none;">01070000806</a>
+                    </p>
+                    <p style="margin-bottom: 15px; font-size: 14px;">
+                        <i class="fas fa-envelope" style="color: white; margin-left: 10px;"></i>
+                        <a href="mailto:info@condosrealty-eg.com" style="color: white; text-decoration: none;">info@condosrealty-eg.com</a>
+                    </p>
+                </div>
+            </div>
+
+            <!-- Divider -->
+            <div style="border-top: 1px solid rgba(255, 255, 255, 0.1); padding: 20px 0; text-align: center;">
+                <p style="font-size: 12px; color: rgba(255, 255, 255, 0.7); margin-bottom: 10px;">
+                    &copy; 2026 Univers Estate للتسويق والوساطة العقارية. جميع الحقوق محفوظة.
+                </p>
+                <p style="font-size: 11px; color: rgba(255, 255, 255, 0.6); line-height: 1.6; margin-bottom: 10px;">
+                    <strong>إخلاء مسؤولية:</strong> جميع المعلومات والأسعار والعروض على هذا الموقع لأغراض إعلامية فقط وقد تكون عرضة للتغيير دون إشعار مسبق. 
+                    نحن لا نتحمل مسؤولية أي أضرار قد تنشأ عن استخدام هذا الموقع أو المعلومات المنشورة عليه. 
+                    يرجى التحقق من جميع التفاصيل مع فريقنا قبل اتخاذ أي قرار استثماري. 
+                    <a href="disclaimer.html" style="color: white; text-decoration: underline;">اقرأ إخلاء المسئولية الكامل</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+        // Mobile Menu Toggle
+        const menuToggle = document.getElementById('menuToggle');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const menuOverlay = document.getElementById('menuOverlay');
+
+        menuToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('active');
+            menuOverlay.classList.toggle('active');
+        });
+
+        // Close menu when clicking on a link
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.remove('active');
+                menuOverlay.classList.remove('active');
+            });
+        });
+
+        // Close menu when clicking overlay
+        menuOverlay.addEventListener('click', () => {
+            mobileMenu.classList.remove('active');
+            menuOverlay.classList.remove('active');
+        });
+
+        // Hide/Show navbar on scroll
+        let lastScrollTop = 0;
+        const header = document.querySelector('header');
+
+        window.addEventListener('scroll', () => {
+            let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+            
+            if (currentScroll > lastScrollTop && currentScroll > 100) {
+                // Scrolling down
+                header.classList.add('hidden');
+            } else {
+                // Scrolling up
+                header.classList.remove('hidden');
+            }
+            
+            lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
+        });
+    </script>
+
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/201070000806?text=مرحبا" target="_blank" class="whatsapp-button" title="اتصل بنا عبر واتس اب">
+        <i class="fab fa-whatsapp"></i>
+        <span class="whatsapp-button-label">01070000806</span>
+    </a>
+</body>
+</html>

@@ -1,0 +1,593 @@
+﻿<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condos Realty - Thank-you </title>  
+    <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-PBXSM6M4');</script>
+<!-- End Google Tag Manager -->
+    
+    <link rel="stylesheet" href="css/header-footer.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            color: #333;
+            background-color: #EAEAEA;
+        }
+
+        header {
+            background-color: #000000;
+            padding: 20px 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            transition: transform 0.3s ease;
+        }
+
+        header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: white;
+        }
+
+        header nav a {
+            text-decoration: none;
+            color: white;
+            font-size: 14px;
+            transition: color 0.3s;
+        }
+
+        .call-btn {
+            background-color: #B9A25A;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s;
+            white-space: nowrap;
+        }
+
+        .call-btn:hover {
+            background-color: #9B8847;
+        }
+
+        /* Dropdown Menu */
+        .nav-dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-toggle {
+            margin-left: 30px;
+            text-decoration: none;
+            color: #333;
+            font-size: 14px;
+            transition: color 0.3s;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .dropdown-toggle:hover {
+            color: #B9A25A;
+        }
+
+        .dropdown-menu {
+            position: absolute;
+            top: 100%;
+            right: 0;
+            background-color: white;
+            border-radius: 4px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            min-width: 200px;
+            padding: 10px 0;
+            display: none;
+            z-index: 100;
+            margin-top: 10px;
+        }
+
+        .nav-dropdown:hover .dropdown-menu {
+            display: block;
+        }
+
+        .dropdown-menu a {
+            display: block;
+            padding: 12px 20px;
+            color: #333;
+            text-decoration: none;
+            font-size: 14px;
+            transition: all 0.3s;
+            margin: 0;
+        }
+
+        .dropdown-menu a:hover {
+            background-color: #EAEAEA;
+            color: #B9A25A;
+            padding-right: 25px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .thank-you-section {
+            min-height: 70vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 60px 20px;
+        }
+
+        .thank-you-content {
+            background: white;
+            padding: 60px 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            max-width: 600px;
+        }
+
+        .thank-you-icon {
+            font-size: 80px;
+            color: #B9A25A;
+            margin-bottom: 30px;
+            animation: bounceIn 0.6s ease;
+        }
+
+        @keyframes bounceIn {
+            0% {
+                transform: scale(0);
+            }
+            50% {
+                transform: scale(1.1);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        .thank-you-content h1 {
+            font-size: 36px;
+            color: #B9A25A;
+            margin-bottom: 20px;
+        }
+
+        .thank-you-content p {
+            font-size: 16px;
+            color: #666;
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+
+        .cta-btn {
+            background-color: #B9A25A;
+            color: white;
+            padding: 15px 40px;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            transition: all 0.3s;
+            margin-top: 20px;
+        }
+
+        .cta-btn:hover {
+            background-color: #9B8847;
+            transform: scale(1.05);
+        }
+
+        /* Mobile Menu */
+        .menu-toggle {
+            background: none;
+            border: none;
+            color: white;
+            font-size: 28px;
+            cursor: pointer;
+            padding: 5px 10px;
+            transition: transform 0.3s;
+            flex-shrink: 0;
+        }
+
+        .menu-toggle:hover {
+            transform: scale(1.1);
+        }
+
+        .mobile-menu {
+            position: fixed;
+            top: 0;
+            right: -100%;
+            width: 75%;
+            height: 100vh;
+            background-color: #000000;
+            padding: 100px 20px 20px;
+            transition: right 0.3s ease-in-out;
+            z-index: 99;
+            overflow-y: auto;
+        }
+
+        .mobile-menu.active {
+            right: 0;
+        }
+
+        .mobile-menu a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            padding: 15px 0;
+            font-size: 18px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s;
+        }
+
+        .mobile-menu a:hover {
+            background-color: rgba(0, 0, 0, 0.1);
+            padding-right: 10px;
+        }
+
+        .menu-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 98;
+        }
+
+        .menu-overlay.active {
+            display: block;
+        }
+
+        header.hidden {
+            transform: translateY(-100%);
+        }
+
+        footer {
+            background-color: #000000;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            margin-top: 60px;
+        }
+
+        @media (max-width: 768px) {
+            .thank-you-content {
+                padding: 40px 20px;
+            }
+
+            .thank-you-content h1 {
+                font-size: 28px;
+            }
+
+            .thank-you-icon {
+                font-size: 60px;
+            }
+
+            header nav {
+                display: none;
+            }
+
+            .menu-toggle {
+                display: block;
+            }
+        }
+
+        /* Hide nav on all devices */
+        header nav {
+            display: none !important;
+        }
+
+        /* WhatsApp Sticky Button */
+        .whatsapp-button {
+            position: fixed;
+            bottom: 30px;
+            left: 30px;
+            width: 60px;
+            height: 60px;
+            background-color: #25D366;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            color: white;
+            font-size: 30px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+            transition: all 0.3s ease;
+            z-index: 98;
+        }
+
+        .whatsapp-button:hover {
+            background-color: #20BA5C;
+            transform: scale(1.1);
+            box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
+        }
+
+        .whatsapp-button-label {
+            position: absolute;
+            bottom: 70px;
+            left: 0;
+            white-space: nowrap;
+            background-color: #25D366;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: bold;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.3s ease;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .whatsapp-button:hover .whatsapp-button-label {
+            opacity: 1;
+        }
+
+        @media (max-width: 768px) {
+            .whatsapp-button {
+                width: 55px;
+                height: 55px;
+                bottom: 20px;
+                left: 20px;
+                font-size: 26px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PBXSM6M4"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <button class="menu-toggle" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="logo"><img src="images/condos-logo.png" alt="Univers Estate" style="height: 40px;"></div>
+            <nav>
+                <a href="index.html">الرئيسية</a>
+                <a href="about-us.html">عن الشركة</a>
+                <a href="contact-us.html">اتصل بنا</a>
+                <a href="privacy.html">سياسية الخصوصية</a>
+                <a href="disclaimer.html">إخلاء المسئولية</a>
+                <a href="tel:01070000806" class="call-btn"><i class="fas fa-phone"></i> 01070000806</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="menu-overlay" id="menuOverlay"></div>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="index.html">الرئيسية</a>
+        <a href="about-us.html">عن الشركة</a>
+        <a href="contact-us.html">اتصل بنا</a>
+        <a href="privacy.html">سياسية الخصوصية</a>
+        <a href="disclaimer.html">إخلاء المسئولية</a>
+        <a href="tel:01070000806" style="background-color: #B9A25A; color: white; padding: 12px 20px; border-radius: 4px; text-align: center; margin-top: 20px; display: block;"><i class="fas fa-phone"></i> اتصل الآن</a>
+    </div>
+
+    <!-- Thank You Section -->
+    <section class="thank-you-section">
+        <div class="thank-you-content">
+            <div class="thank-you-icon">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <h1>شكراً لك!</h1>
+            <p>
+                تم استقبال رسالتك بنجاح. سيقوم فريقنا بمراجعة استفسارك والتواصل معك في أقرب وقت ممكن.
+            </p>
+            <p style="font-size: 14px; color: #999;">
+                إذا كانت لديك أي أسئلة إضافية، لا تتردد في التواصل معنا مباشرة.
+            </p>
+            <a href="index.html" class="cta-btn">العودة إلى الرئيسية</a>
+            
+        </div>
+    </section>
+
+    <footer style="background-color: #000000 !important;">
+        <div class="container" style="padding: 40px 20px;">
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 40px; margin-bottom: 40px;">
+                <!-- Logo Section -->
+                <div>
+                    <img src="images/condos-logo.png" alt="Univers Estate" style="height: 50px; margin-bottom: 20px;">
+                    <p style="font-size: 14px; line-height: 1.8;">شركة Univers Estate متخصصة في التسويق والوساطة العقارية، نقدم أفضل المشاريع السكنية والتجارية الفاخرة في أفضل المواقع الاستراتيجية.</p>
+                </div>
+
+                <!-- Links Section -->
+                <div>
+                    <h4 style="margin-bottom: 20px; font-size: 16px;">الروابط السريعة</h4>
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="margin-bottom: 10px;"><a href="index.html" style="color: white; text-decoration: none;">الرئيسية</a></li>
+                        <li style="margin-bottom: 10px;"><a href="about-us.html" style="color: white; text-decoration: none;">عن الشركة</a></li>
+                        <li style="margin-bottom: 10px;"><a href="contact-us.html" style="color: white; text-decoration: none;">اتصل بنا</a></li>
+                        <li style="margin-bottom: 10px;"><a href="privacy.html" style="color: white; text-decoration: none;">سياسية الخصوصية</a></li>
+                        <li style="margin-bottom: 10px;"><a href="disclaimer.html" style="color: white; text-decoration: none;">إخلاء المسئولية</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Section -->
+                <div>
+                    <h4 style="margin-bottom: 20px; font-size: 16px;">تواصل معنا</h4>
+                    <p style="margin-bottom: 15px; font-size: 14px;">
+                        <i class="fas fa-map-marker-alt" style="color: white; margin-left: 10px;"></i>
+                         7212 Elmearag Elsofly
+5
+Maadi
+Giza Governorate 12345
+Egypt  
+                    </p>
+                    <p style="margin-bottom: 15px; font-size: 14px;">
+                        <i class="fas fa-phone" style="color: white; margin-left: 10px;"></i>
+                        <a href="tel:01070000806" style="color: white; text-decoration: none;">01070000806</a>
+                    </p>
+                    <p style="margin-bottom: 15px; font-size: 14px;">
+                        <i class="fas fa-envelope" style="color: white; margin-left: 10px;"></i>
+                        <a href="mailto:info@condosrealty-eg.com" style="color: white; text-decoration: none;">info@condosrealty-eg.com</a>
+                    </p>
+                </div>
+            </div>
+
+            <!-- Divider -->
+            <div style="border-top: 1px solid rgba(255, 255, 255, 0.1); padding: 20px 0; text-align: center;">
+                <p style="font-size: 12px; color: rgba(255, 255, 255, 0.7); margin-bottom: 10px;">
+                    &copy; 2026 Univers Estate للتسويق والوساطة العقارية. جميع الحقوق محفوظة.
+                </p>
+                <p style="font-size: 11px; color: rgba(255, 255, 255, 0.6); line-height: 1.6;">
+                    <strong>إخلاء مسؤولية:</strong> جميع المعلومات والأسعار والعروض على هذا الموقع لأغراض إعلامية فقط وقد تكون عرضة للتغيير دون إشعار مسبق. 
+                    نحن لا نتحمل مسؤولية أي أضرار قد تنشأ عن استخدام هذا الموقع أو المعلومات المنشورة عليه. 
+                    يرجى التحقق من جميع التفاصيل مع فريقنا قبل اتخاذ أي قرار استثماري. 
+                    <a href="disclaimer.html" style="color: white; text-decoration: underline;">اقرأ إخلاء المسئولية الكامل</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+        // Mobile Menu Toggle
+        const menuToggle = document.getElementById('menuToggle');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const menuOverlay = document.getElementById('menuOverlay');
+
+        menuToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('active');
+            menuOverlay.classList.toggle('active');
+        });
+
+        // Close menu when clicking on a link
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.remove('active');
+                menuOverlay.classList.remove('active');
+            });
+        });
+
+        // Close menu when clicking overlay
+        menuOverlay.addEventListener('click', () => {
+            mobileMenu.classList.remove('active');
+            menuOverlay.classList.remove('active');
+        });
+
+        // Hide/Show navbar on scroll
+        let lastScrollTop = 0;
+        const header = document.querySelector('header');
+
+        window.addEventListener('scroll', () => {
+            let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+            
+            if (currentScroll > lastScrollTop && currentScroll > 100) {
+                // Scrolling down
+                header.classList.add('hidden');
+            } else {
+                // Scrolling up
+                header.classList.remove('hidden');
+            }
+            
+            lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
+
+        // Contact Form Validation
+        const contactForm = document.getElementById('contactForm');
+        if (contactForm) {
+            contactForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                const name = document.getElementById('name').value.trim();
+                const phone = document.getElementById('phone').value.trim();
+                const email = document.getElementById('email').value.trim();
+                const project = document.getElementById('project').value;
+                const message = document.getElementById('message').value.trim();
+
+                // Validation
+                if (!name) {
+                    alert('الرجاء إدخال اسمك الكامل');
+                    document.getElementById('name').focus();
+                    return false;
+                }
+
+                if (!phone) {
+                    alert('الرجاء إدخال رقم الهاتف');
+                    document.getElementById('phone').focus();
+                    return false;
+                }
+
+                if (!/^01[0-9]{9}$/.test(phone)) {
+                    alert('الرجاء إدخال رقم هاتف صحيح');
+                    document.getElementById('phone').focus();
+                    return false;
+                }
+
+                if (email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+                    alert('الرجاء إدخال بريد إلكتروني صحيح');
+                    document.getElementById('email').focus();
+                    return false;
+                }
+
+                if (!project) {
+                    alert('الرجاء اختيار مشروع');
+                    document.getElementById('project').focus();
+                    return false;
+                }
+
+                // If all validations pass
+                const whatsappMessage = `مرحباً، أنا ${name}%0Aرقم الهاتف: ${phone}%0Aالبريد الإلكتروني: ${email || 'لم يتم إدخاله'}%0Aالمشروع: ${project}%0Aالرسالة: ${message || 'لا توجد رسالة'}`;
+                window.open(`https://wa.me/201070000806?text=${whatsappMessage}`, '_blank');
+                
+                alert('شكراً لتسجيلك! سيتم التواصل معك قريباً');
+                this.reset();
+            });
+        }
+    </script>
+
+    <!-- GLightbox Script -->
+    <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+    <script>
+        const lightbox = GLightbox({
+            selector: '.gallery-lightbox',
+            touchNavigation: true,
+            loop: true,
+            autoplayVideos: true
+        });
+        });
+    </script>
+
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/201070000806?text=مرحبا" target="_blank" class="whatsapp-button" title="اتصل بنا عبر واتس اب">
+        <i class="fab fa-whatsapp"></i>
+        <span class="whatsapp-button-label">01070000806</span>
+    </a>
+</body>
+</html>

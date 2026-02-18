@@ -1,0 +1,579 @@
+﻿<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>سياسة الخصوصية - Univers Estate</title>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-PBXSM6M4');</script>
+    <!-- End Google Tag Manager -->
+    <link rel="stylesheet" href="css/header-footer.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            color: #333;
+            background-color: #EAEAEA;
+            line-height: 1.8;
+        }
+
+        header {
+            background-color: #000000;
+            padding: 20px 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            transition: transform 0.3s ease;
+        }
+
+        header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: white;
+        }
+
+        header nav {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+        }
+
+        header nav a {
+            text-decoration: none;
+            color: white;
+            font-size: 14px;
+            transition: color 0.3s;
+        }
+
+        .call-btn {
+            background-color: #B9A25A;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s;
+            white-space: nowrap;
+        }
+
+        .call-btn:hover {
+            background-color: #9B8847;
+        }
+
+        /* Language Toggle Button */
+        .language-toggle {
+            background-color: #B9A25A;
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: background-color 0.3s;
+        }
+
+        .language-toggle:hover {
+            background-color: #9B8847;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .page-header {
+            background: linear-gradient(rgba(185, 162, 90, 0.8), rgba(185, 162, 90, 0.8)), url('images/hero.jpg') center/cover no-repeat;
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        .page-header h1 {
+            font-size: 42px;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .privacy-content {
+            background: white;
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 50px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .privacy-content h2 {
+            color: #B9A25A;
+            font-size: 24px;
+            margin: 30px 0 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #E8EEF7;
+        }
+
+        .privacy-content p {
+            margin-bottom: 15px;
+            line-height: 1.8;
+        }
+
+        .privacy-content ul {
+            margin-right: 20px;
+            margin-bottom: 15px;
+        }
+
+        .privacy-content li {
+            margin-bottom: 10px;
+        }
+
+        .ar-content {
+            display: none;
+        }
+
+        .ar-content.active {
+            display: block;
+        }
+
+        .en-content.hidden {
+            display: none;
+        }
+
+        /* Mobile Menu */
+        .menu-toggle {
+            background: none;
+            border: none;
+            color: white;
+            font-size: 28px;
+            cursor: pointer;
+            padding: 5px 10px;
+            transition: transform 0.3s;
+            flex-shrink: 0;
+            display: none;
+        }
+
+        .menu-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 98;
+        }
+
+        .menu-overlay.active {
+            display: block;
+        }
+
+        .mobile-menu {
+            position: fixed;
+            top: 0;
+            right: -100%;
+            width: 80%;
+            max-width: 400px;
+            height: 100vh;
+            background-color: #000000;
+            padding: 100px 20px 20px;
+            transition: right 0.3s ease-in-out;
+            z-index: 99;
+            overflow-y: auto;
+            box-shadow: -2px 0 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .mobile-menu.active {
+            right: 0;
+        }
+
+        .mobile-menu a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            padding: 15px 0;
+            font-size: 18px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s;
+        }
+
+        .mobile-menu a:hover {
+            background-color: rgba(0, 0, 0, 0.1);
+            padding-right: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .page-header h1 {
+                font-size: 28px;
+            }
+
+            .privacy-content {
+                padding: 30px;
+            }
+
+            .privacy-content h2 {
+                font-size: 18px;
+            }
+
+            header nav {
+                display: none;
+            }
+
+            .menu-toggle {
+                display: block;
+            }
+
+            .language-toggle {
+                padding: 6px 12px;
+                font-size: 12px;
+            }
+        }
+
+        /* Hide nav on all devices */
+        header nav {
+            display: none !important;
+        }
+        
+    </style>
+</head>
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PBXSM6M4"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    
+    <!-- Header -->
+    <header>
+        <div class="container" style="display: flex; justify-content: space-between; align-items: center;">
+            <button class="menu-toggle" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="logo" style="flex-grow: 1; text-align: center;"><img src="images/condos-logo.png" alt="Univers Estate" style="height: 40px;"></div>
+            <button class="language-toggle" id="languageToggle">English</button>
+            <nav>
+                <a href="index.html">الرئيسية</a>
+                <a href="about-us.html">عن الشركة</a>
+                <a href="contact-us.html">اتصل بنا</a>
+                <a href="privacy.html">سياسية الخصوصية</a>
+                <a href="disclaimer.html">إخلاء المسئولية</a>
+                <a href="tel:01070000806" class="call-btn"><i class="fas fa-phone"></i> 01070000806</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="menu-overlay" id="menuOverlay"></div>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="index.html">الرئيسية</a>
+        <a href="about-us.html">عن الشركة</a>
+        <a href="contact-us.html">اتصل بنا</a>
+        <a href="privacy.html">سياسية الخصوصية</a>
+        <a href="disclaimer.html">إخلاء المسئولية</a>
+        <a href="tel:01070000806" style="background-color: #B9A25A; color: white; padding: 12px 20px; border-radius: 4px; text-align: center; margin-top: 20px; display: block;"><i class="fas fa-phone"></i> اتصل الآن</a>
+    </div>
+
+    <!-- Page Header AR -->
+    <section class="page-header ar-content active">
+        <div class="container">
+            <h1>سياسة الخصوصية</h1>
+            <p>شروط الاستخدام وحماية البيانات</p>
+        </div>
+    </section>
+
+    <!-- Page Header EN -->
+    <section class="page-header en-content">
+        <div class="container">
+            <h1>Privacy Policy</h1>
+            <p>Terms of Use and Data Protection</p>
+        </div>
+    </section>
+
+    <!-- ARABIC CONTENT -->
+    <div class="privacy-content ar-content active">
+        <p>نرحب بكم في منصة <strong>Univers Estate</strong>. نلتزم بحماية خصوصية زوارنا وعملائنا، ونوضح من خلال هذه السياسة كيفية جمع واستخدام وحماية البيانات الشخصية، بما يتوافق مع سياسات إعلانات جوجل ومعايير حماية البيانات المعمول بها.</p>
+
+        <h2>1. من نحن</h2>
+        <p><strong>Univers Estate</strong> هي منصة إعلامية وتسويقية عقارية مملوكة وتُدار بواسطة وسيط عقاري مستقل. تقوم المنصة بعرض وتسويق الفرص السكنية والاستثمارية المتاحة من مطورين عقاريين مختلفين لأغراض تعريفية وتسويقية فقط، ولا تُعد مطورًا عقاريًا أو مالكًا لأي مشروع معروض.</p>
+
+        <h2>2. البيانات التي نقوم بجمعها</h2>
+        <p>قد نقوم بجمع بعض البيانات عند استخدامك للموقع أو ملء نماذج التواصل، وتشمل:</p>
+        <ul>
+            <li>الاسم</li>
+            <li>رقم الهاتف</li>
+            <li>البريد الإلكتروني (إن وُجد)</li>
+            <li>المشروع أو نوع الوحدة محل الاهتمام</li>
+        </ul>
+        <p>يتم جمع هذه البيانات فقط بغرض التواصل وتقديم المعلومات المطلوبة.</p>
+
+        <h2>3. كيفية استخدام البيانات</h2>
+        <ul>
+            <li>التواصل مع العملاء والرد على الاستفسارات</li>
+            <li>تقديم معلومات عن المشاريع والخدمات العقارية</li>
+            <li>تحسين جودة المحتوى والخدمات المقدمة</li>
+        </ul>
+
+        <h2>4. مشاركة البيانات</h2>
+        <p>نلتزم بعدم بيع أو تأجير أو مشاركة بياناتك الشخصية مع أي طرف ثالث، إلا في الحالات التالية:</p>
+        <ul>
+            <li>بعد الحصول على موافقة صريحة من المستخدم</li>
+            <li>عند الحاجة لمشاركة البيانات مع المطور العقاري بغرض إتمام التواصل بناءً على طلب العميل</li>
+        </ul>
+
+        <h2>5. ملفات تعريف الارتباط (Cookies)</h2>
+        <p>قد يستخدم الموقع ملفات تعريف الارتباط (Cookies) وأدوات التحليل مثل Google Analytics لتحسين تجربة المستخدم وقياس أداء الحملات الإعلانية، دون جمع أي معلومات تعريف شخصية بشكل مباشر.</p>
+
+        <h2>6. الإعلانات والالتزام بسياسات جوجل</h2>
+        <p>يتم تشغيل الحملات الإعلانية الخاصة بالموقع وفقًا لسياسات إعلانات جوجل. لا تحتوي الإعلانات أو الصفحات على أي معلومات مضللة، ويتم توضيح طبيعة المنصة ودورها كوسيط عقاري مستقل بشكل شفاف.</p>
+
+        <h2>7. حماية البيانات</h2>
+        <p>نتخذ الإجراءات الفنية والتنظيمية المناسبة لحماية بيانات المستخدمين من الوصول غير المصرح به أو الاستخدام أو التعديل أو الإفصاح.</p>
+
+        <h2>8. حقوق المستخدم</h2>
+        <p>يحق للمستخدم:</p>
+        <ul>
+            <li>طلب معرفة البيانات التي نحتفظ بها</li>
+            <li>طلب تعديل أو حذف بياناته</li>
+            <li>سحب الموافقة على استخدام البيانات في أي وقت</li>
+        </ul>
+        <p>وذلك من خلال التواصل معنا مباشرة.</p>
+
+        <h2>9. التعديلات على سياسة الخصوصية</h2>
+        <p>نحتفظ بالحق في تحديث أو تعديل سياسة الخصوصية في أي وقت، وسيتم نشر أي تحديث على هذه الصفحة.</p>
+
+        <h2>10. التواصل معنا</h2>
+        <p>في حال وجود أي استفسار بخصوص سياسة الخصوصية، يمكنكم التواصل معنا عبر:</p>
+        <ul>
+            <li><strong>البريد الإلكتروني:</strong> info@condosrealty-eg.com</li>
+            <li><strong>الهاتف:</strong> 01070000806</li>
+            <li><strong>الموقع:</strong> 7212 Elmearag Elsofly 5, Maadi, Giza Governorate 12345, Egypt</li>
+        </ul>
+
+        <p style="margin-top: 40px; padding-top: 20px; border-top: 2px solid #E8EEF7; font-weight: bold; text-align: center;">
+            آخر تحديث لهذه الشروط: 5 فبراير 2026
+        </p>
+    </div>
+
+    <!-- ENGLISH CONTENT -->
+    <div class="privacy-content en-content">
+        <p>We welcome you to the <strong>Univers Estate</strong> platform. We are committed to protecting the privacy of our visitors and clients, and through this policy, we clarify how we collect, use, and protect personal data in compliance with Google Ads policies and applicable data protection standards.</p>
+
+        <h2>1. Who We Are</h2>
+        <p><strong>Univers Estate</strong> is an online real estate marketing and media platform owned and operated by an independent real estate broker. The platform displays and markets available residential and investment opportunities from various real estate developers for informational and marketing purposes only, and is not a real estate developer or owner of any listed projects.</p>
+
+        <h2>2. Data We Collect</h2>
+        <p>We may collect certain data when you use the website or fill out contact forms, including:</p>
+        <ul>
+            <li>Name</li>
+            <li>Phone Number</li>
+            <li>Email Address (if provided)</li>
+            <li>Project or Unit Type of Interest</li>
+        </ul>
+        <p>This data is collected solely for the purpose of communication and providing requested information.</p>
+
+        <h2>3. How We Use Your Data</h2>
+        <ul>
+            <li>Contacting clients and responding to inquiries</li>
+            <li>Providing information about real estate projects and services</li>
+            <li>Improving the quality of content and services provided</li>
+        </ul>
+
+        <h2>4. Data Sharing</h2>
+        <p>We are committed to not selling, renting, or sharing your personal data with any third party, except in the following cases:</p>
+        <ul>
+            <li>After obtaining explicit consent from the user</li>
+            <li>When necessary to share data with the real estate developer to complete communication based on the client's request</li>
+        </ul>
+
+        <h2>5. Cookies and Tracking</h2>
+        <p>The website may use cookies and analytics tools such as Google Analytics to improve user experience and measure advertising campaign performance, without directly collecting any personally identifiable information.</p>
+
+        <h2>6. Advertisements and Google Policy Compliance</h2>
+        <p>The website's advertising campaigns are run in accordance with Google Ads policies. Advertisements or pages do not contain any misleading information, and the nature of the platform and its role as an independent real estate broker is clearly disclosed.</p>
+
+        <h2>7. Data Protection</h2>
+        <p>We take appropriate technical and organizational measures to protect user data from unauthorized access, use, modification, or disclosure.</p>
+
+        <h2>8. User Rights</h2>
+        <p>Users have the right to:</p>
+        <ul>
+            <li>Request information about the data we maintain</li>
+            <li>Request modification or deletion of their data</li>
+            <li>Withdraw consent for data use at any time</li>
+        </ul>
+        <p>This can be done by contacting us directly.</p>
+
+        <h2>9. Changes to Privacy Policy</h2>
+        <p>We reserve the right to update or modify this privacy policy at any time, and any updates will be posted on this page.</p>
+
+        <h2>10. Contact Us</h2>
+        <p>If you have any questions about this privacy policy, you can contact us through:</p>
+        <ul>
+            <li><strong>Email:</strong> info@condosrealty-eg.com</li>
+            <li><strong>Phone:</strong> 01070000806</li>
+            <li><strong>Address:</strong> 7212 Elmearag Elsofly 5, Maadi, Giza Governorate 12345, Egypt</li>
+        </ul>
+
+        <p style="margin-top: 40px; padding-top: 20px; border-top: 2px solid #E8EEF7; font-weight: bold; text-align: center;">
+            This policy was last updated on February 5, 2026
+        </p>
+    </div>
+
+    <!-- Footer -->
+    <footer style="background-color: #000000 !important;">
+        <div class="container" style="padding: 40px 20px;">
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 40px; margin-bottom: 40px;">
+                <!-- Logo Section -->
+                <div>
+                    <img src="images/condos-logo.png" alt="Univers Estate" style="height: 50px; margin-bottom: 20px;">
+                    <p style="font-size: 14px; line-height: 1.8;">شركة Univers Estate متخصصة في التسويق والوساطة العقارية، نقدم أفضل المشاريع السكنية والتجارية الفاخرة في أفضل المواقع الاستراتيجية.</p>
+                </div>
+
+                <!-- Links Section -->
+                <div>
+                    <h4 style="margin-bottom: 20px; font-size: 16px;">الروابط السريعة</h4>
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="margin-bottom: 10px;"><a href="index.html" style="color: white; text-decoration: none;">الرئيسية</a></li>
+                        <li style="margin-bottom: 10px;"><a href="about-us.html" style="color: white; text-decoration: none;">عن الشركة</a></li>
+                        <li style="margin-bottom: 10px;"><a href="contact-us.html" style="color: white; text-decoration: none;">اتصل بنا</a></li>
+                        <li style="margin-bottom: 10px;"><a href="privacy.html" style="color: white; text-decoration: none;">سياسية الخصوصية</a></li>
+                        <li style="margin-bottom: 10px;"><a href="disclaimer.html" style="color: white; text-decoration: none;">إخلاء المسئولية</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Section -->
+                <div>
+                    <h4 style="margin-bottom: 20px; font-size: 16px;">تواصل معنا</h4>
+                    <p style="margin-bottom: 15px; font-size: 14px;">
+                        <i class="fas fa-map-marker-alt" style="color: white; margin-left: 10px;"></i>
+                        7212 Elmearag Elsofly 5, Maadi, Giza Governorate 12345, Egypt  
+                    </p>
+                    <p style="margin-bottom: 15px; font-size: 14px;">
+                        <i class="fas fa-phone" style="color: white; margin-left: 10px;"></i>
+                        <a href="tel:01070000806" style="color: white; text-decoration: none;">01070000806</a>
+                    </p>
+                    <p style="margin-bottom: 15px; font-size: 14px;">
+                        <i class="fas fa-envelope" style="color: white; margin-left: 10px;"></i>
+                        <a href="mailto:info@condosrealty-eg.com" style="color: white; text-decoration: none;">info@condosrealty-eg.com</a>
+                    </p>
+                </div>
+            </div>
+
+            <!-- Divider -->
+            <div style="border-top: 1px solid rgba(255, 255, 255, 0.1); padding: 20px 0; text-align: center;">
+                <p style="font-size: 12px; color: rgba(255, 255, 255, 0.7); margin-bottom: 10px;">
+                    &copy; 2026 Univers Estate للتسويق والوساطة العقارية. جميع الحقوق محفوظة.
+                </p>
+                <p style="font-size: 11px; color: rgba(255, 255, 255, 0.6); line-height: 1.6;">
+                    <strong>إخلاء مسؤولية:</strong> جميع المعلومات والأسعار والعروض على هذا الموقع لأغراض إعلامية فقط وقد تكون عرضة للتغيير دون إشعار مسبق. 
+                    نحن لا نتحمل مسؤولية أي أضرار قد تنشأ عن استخدام هذا الموقع أو المعلومات المنشورة عليه. 
+                    يرجى التحقق من جميع التفاصيل مع فريقنا قبل اتخاذ أي قرار استثماري. 
+                    <a href="disclaimer.html" style="color: white; text-decoration: underline;">اقرأ إخلاء المسئولية الكامل</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+        // Language Toggle
+        const languageToggle = document.getElementById('languageToggle');
+        const enContent = document.querySelectorAll('.en-content');
+        const arContent = document.querySelectorAll('.ar-content');
+
+        let isEnglish = false;
+
+        function toggleLanguage() {
+            isEnglish = !isEnglish;
+            
+            if (isEnglish) {
+                enContent.forEach(el => el.classList.remove('hidden'));
+                arContent.forEach(el => el.classList.remove('active'));
+                enContent.forEach(el => el.classList.add('active'));
+                arContent.forEach(el => el.classList.add('hidden'));
+                languageToggle.textContent = 'عربي';
+                document.documentElement.lang = 'en';
+                document.documentElement.dir = 'ltr';
+            } else {
+                enContent.forEach(el => el.classList.add('hidden'));
+                arContent.forEach(el => el.classList.add('active'));
+                enContent.forEach(el => el.classList.remove('active'));
+                arContent.forEach(el => el.classList.remove('hidden'));
+                languageToggle.textContent = 'English';
+                document.documentElement.lang = 'ar';
+                document.documentElement.dir = 'rtl';
+            }
+        }
+
+        languageToggle.addEventListener('click', toggleLanguage);
+
+        // Mobile Menu Toggle
+        const menuToggle = document.getElementById('menuToggle');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const menuOverlay = document.getElementById('menuOverlay');
+
+        menuToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('active');
+            menuOverlay.classList.toggle('active');
+        });
+
+        // Close menu when clicking on a link
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.remove('active');
+                menuOverlay.classList.remove('active');
+            });
+        });
+
+        // Close menu when clicking overlay
+        menuOverlay.addEventListener('click', () => {
+            mobileMenu.classList.remove('active');
+            menuOverlay.classList.remove('active');
+        });
+
+        // Hide/Show navbar on scroll
+        let lastScrollTop = 0;
+        const header = document.querySelector('header');
+
+        window.addEventListener('scroll', () => {
+            let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+            
+            if (currentScroll > lastScrollTop && currentScroll > 100) {
+                // Scrolling down
+                header.classList.add('hidden');
+            } else {
+                // Scrolling up
+                header.classList.remove('hidden');
+            }
+            
+            lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
+        });
+    </script>
+
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/201070000806?text=مرحبا" target="_blank" class="whatsapp-button" title="اتصل بنا عبر واتس اب">
+        <i class="fab fa-whatsapp"></i>
+        <span class="whatsapp-button-label">01070000806</span>
+    </a>
+</body>
+</html>

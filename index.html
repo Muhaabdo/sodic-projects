@@ -1,0 +1,1189 @@
+﻿<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Univers Estate</title>
+   <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-PBXSM6M4');</script>
+<!-- End Google Tag Manager -->
+    <link rel="stylesheet" href="css/header-footer.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            color: #333;
+            background-color: #EAEAEA;
+        }
+
+        header {
+            background-color: #000000;
+            padding: 20px 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            transition: transform 0.3s ease;
+        }
+
+        header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: white;
+            flex-shrink: 0;
+        }
+
+        header nav {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            flex-grow: 1;
+            justify-content: center;
+        }
+
+        header nav a {
+            text-decoration: none;
+            color: white;
+            font-size: 14px;
+            transition: color 0.3s;
+        }
+
+        .call-btn {
+            background-color: #B9A25A;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s;
+            white-space: nowrap;
+        }
+
+        .call-btn:hover {
+            background-color: #9B8847;
+        }
+
+        /* Dropdown Menu */
+        .nav-dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-toggle {
+            margin-left: 30px;
+            text-decoration: none;
+            color: white;
+            font-size: 14px;
+            transition: color 0.3s;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .dropdown-toggle:hover {
+            color: #B9A25A;
+        }
+
+        .dropdown-menu {
+            position: absolute;
+            top: 100%;
+            right: 0;
+            background-color: white;
+            border-radius: 4px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            min-width: 200px;
+            padding: 10px 0;
+            display: none;
+            z-index: 100;
+            margin-top: 10px;
+        }
+
+        .nav-dropdown:hover .dropdown-menu {
+            display: block;
+        }
+
+        .dropdown-menu a {
+            display: block;
+            padding: 12px 20px;
+            color: #000000;
+            text-decoration: none;
+            font-size: 14px;
+            transition: all 0.3s;
+            margin: 0;
+        }
+
+        .dropdown-menu a:hover {
+            background-color: #EAEAEA;
+            color: #B9A25A;
+            padding-right: 25px;
+        }
+
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('images/hero.jpeg') center/cover no-repeat;
+            color: white;
+            padding: 120px 20px 80px;
+            text-align: center;
+            min-height: 600px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            position: relative;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            font-weight: bold;
+            line-height: 1.4;
+        }
+
+        .hero p {
+            font-size: 20px;
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+
+        /* Scroll Down Arrow Animation */
+        .scroll-arrow {
+            position: absolute;
+            bottom: 40px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 32px;
+            color: white;
+            cursor: pointer;
+            animation: bounce 2s infinite;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+        }
+
+        .scroll-arrow:hover {
+            color: #B9A25A;
+            transform: translateX(-50%) scale(1.2);
+        }
+
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateX(-50%) translateY(0);
+            }
+            50% {
+                transform: translateX(-50%) translateY(-15px);
+            }
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 36px;
+            font-weight: bold;
+            margin: 60px 0 40px;
+            color: #B9A25A;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-bottom: 60px;
+        }
+
+        .feature-card {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .feature-card i {
+            font-size: 48px;
+            color: #B9A25A;
+            margin-bottom: 20px;
+        }
+
+        .feature-card h3 {
+            margin-bottom: 15px;
+            color: #B9A25A;
+        }
+
+        .feature-card p {
+            color: #666;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        .cta-btn {
+            background-color: #B9A25A;
+            color: white;
+            padding: 15px 40px;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            transition: all 0.3s;
+        }
+
+        .cta-btn:hover {
+            background-color: #9B8847;
+            transform: scale(1.05);
+        }
+
+        /* Project Cards Styling */
+        .project-card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            border: 1px solid rgba(185, 162, 90, 0.2);
+        }
+
+        .project-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 40px rgba(185, 162, 90, 0.3);
+        }
+
+        .project-image {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .project-image::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0) !important;
+            transition: background 0.3s ease;
+        }
+
+        .project-card:hover .project-image::after {
+            background: rgba(0, 0, 0, 0.2) !important;
+        }
+
+        .project-content {
+            padding: 30px;
+        }
+
+        .project-title {
+            font-size: 22px;
+            font-weight: bold;
+            color: #000000;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .project-title::before {
+            content: '';
+            width: 4px;
+            height: 24px;
+            background-color: #B9A25A;
+            border-radius: 2px;
+        }
+
+        .project-location {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+        }
+
+        .project-description {
+            font-size: 14px;
+            color: #555;
+            line-height: 1.6;
+            margin-bottom: 25px;
+        }
+
+        .project-buttons {
+            display: flex;
+            gap: 12px;
+            justify-content: center;
+        }
+
+        .project-btn {
+            flex: 1;
+            padding: 12px 16px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+            cursor: pointer;
+        }
+
+        .whatsapp-btn {
+            background-color: #25D366;
+            color: white;
+        }
+
+        .whatsapp-btn:hover {
+            background-color: #20BA5C;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(37, 211, 102, 0.3);
+        }
+
+        .call-btn-project {
+            background-color: #B9A25A;
+            color: white;
+        }
+
+        .call-btn-project:hover {
+            background-color: #9B8847;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(185, 162, 90, 0.3);
+        }
+
+        /* Gallery Styling */
+        .gallery-item {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .gallery-item:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 10px 30px rgba(185, 162, 90, 0.25);
+        }
+
+        .gallery-image-wrapper {
+            position: relative;
+            overflow: hidden;
+            background: #f5f5f5;
+        }
+
+        .gallery-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(185, 162, 90, 0.85);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .gallery-item:hover .gallery-overlay {
+            opacity: 1;
+        }
+
+        .gallery-link {
+            width: 50px;
+            height: 50px;
+            background: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #B9A25A;
+            font-size: 24px;
+            transition: all 0.3s;
+            text-decoration: none;
+        }
+
+        .gallery-link:hover {
+            transform: scale(1.2);
+            background-color: #f0f0f0;
+        }
+
+        /* Form Styling */
+        #contactForm input:focus,
+        #contactForm select:focus,
+        #contactForm textarea:focus {
+            outline: none;
+            border-color: #B9A25A !important;
+            box-shadow: 0 0 0 3px rgba(185, 162, 90, 0.1);
+        }
+
+        #contactForm button:hover {
+            background-color: #9B8847;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(185, 162, 90, 0.3);
+        }
+
+        footer {
+            background-color: #000000;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            margin-top: 60px;
+        }
+
+        /* Mobile Menu */
+        .menu-toggle {
+            background: none;
+            border: none;
+            color: white;
+            font-size: 28px;
+            cursor: pointer;
+            padding: 5px 10px;
+            transition: transform 0.3s;
+            flex-shrink: 0;
+        }
+
+        .menu-toggle:hover {
+            transform: scale(1.1);
+        }
+
+        .mobile-menu {
+            position: fixed;
+            top: 0;
+            right: -100%;
+            width: 80%;
+            max-width: 400px;
+            height: 100vh;
+            background-color: #000000;
+            padding: 100px 20px 20px;
+            transition: right 0.3s ease-in-out;
+            z-index: 99;
+            overflow-y: auto;
+            box-shadow: -2px 0 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .mobile-menu.active {
+            right: 0;
+        }
+
+        .mobile-menu a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            padding: 15px 0;
+            font-size: 18px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s;
+        }
+
+        .mobile-menu a:hover {
+            background-color: rgba(0, 0, 0, 0.1);
+            padding-right: 10px;
+        }
+
+        .menu-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 98;
+        }
+
+        .menu-overlay.active {
+            display: block;
+        }
+
+        header.hidden {
+            transform: translateY(-100%);
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 32px;
+            }
+
+            .hero p {
+                font-size: 16px;
+            }
+
+            .section-title {
+                font-size: 28px;
+            }
+
+            .features-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Hide nav on all devices, show burger menu */
+        header nav {
+            display: none !important;
+        }
+    </style>
+</head>
+<body>
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PBXSM6M4"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <button class="menu-toggle" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="logo"><img src="" alt="Univers Estate" style="height: 40px;"></div>
+            <nav>
+                <a href="index.html">الرئيسية</a>
+                <a href="about-us.html">عن الشركة</a>
+                <a href="contact-us.html">اتصل بنا</a>
+                <a href="privacy.html">سياسية الخصوصية</a>
+                <a href="disclaimer.html">إخلاء المسئولية</a>
+                <a href="tel:01070000806" class="call-btn"><i class="fas fa-phone"></i> 01070000806</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="menu-overlay" id="menuOverlay"></div>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="index.html">الرئيسية</a>
+        <a href="about-us.html">عن الشركة</a>
+        <a href="contact-us.html">اتصل بنا</a>
+        <a href="privacy.html">سياسية الخصوصية</a>
+        <a href="disclaimer.html">إخلاء المسئولية</a>
+        <a href="tel:01070000806" style="background-color: #B9A25A; color: white; padding: 12px 20px; border-radius: 4px; text-align: center; margin-top: 20px; display: block;"><i class="fas fa-phone"></i> اتصل الآن</a>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="heroSection">
+        <div class="container">
+            <h1>امتلك وحدتك من سوديك </h1>
+            <p>مقدم يبدأ من 5% فقط، قسط يصل الى 10 سنوات</p>
+            <p>اسعار تبدأ من 11,000,000 جنية</p>
+            <a href="https://wa.me/201070000806?text=I'm%20interested%20in%20Sodic%20Projects%20prices" target="_blank" style="display: inline-block; margin-top: 20px; padding: 15px 40px; background-color: #B9A25A; color: white; text-decoration: none; border-radius: 8px; font-size: 18px; font-weight: bold; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(185, 162, 90, 0.3);" onmouseover="this.style.backgroundColor='#9B8847'; this.style.transform='scale(1.05)'" onmouseout="this.style.backgroundColor='#B9A25A'; this.style.transform='scale(1)'">
+                <i class="fab fa-whatsapp" style="margin-left: 10px;"></i> تفاصيل اكثر 
+            </a>
+        </div>
+        <a href="#projectsSection" class="scroll-arrow" title="اسحب لأسفل">
+            <i class="fas fa-chevron-down"></i>
+        </a>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projectsSection" style="background: linear-gradient(135deg, #f8f8f8 0%, #EAEAEA 100%); padding: 80px 20px;">
+        <div class="container" style="max-width: 1200px; margin: 0 auto;">
+            <h2 class="section-title">المشاريع المتاحة</h2>
+            <p style="text-align: center; margin-bottom: 60px; font-size: 16px; color: #666;">اختر من أفضل المشاريع السكنية الفاخرة والمميزة</p>
+            
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 40px;">
+                <!-- Project Card 1 - Vye -->
+                <div class="project-card">
+                    <div class="project-image" style="background: linear-gradient(135deg, #B9A25A 0%, #9B8847 100%); height: 250px; border-radius: 12px 12px 0 0; display: flex; align-items: center; justify-content: center; color: white; font-size: 18px;">
+                        <img src="images/vye.jpg" alt="Vye" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Vye</h3>
+                        <p class="project-location"><i class="fas fa-map-marker-alt" style="color: #B9A25A; margin-left: 8px;"></i>New Zayed</p>
+                        <div style="font-size: 14px; color: #555; line-height: 1.8; margin-bottom: 20px;">
+                            <div><strong>الوحدات المتوفرة:</strong> Core + Shell</div>
+                            <div><strong>المقدم:</strong> 5%</div>
+                            <div><strong>أقساط:</strong> 8 سنوات (جاهز للسكن)</div>
+                            <div><strong>أسعار تبدأ من:</strong> 12,000,000 جنيه</div>
+                        </div>
+                        <div class="project-buttons">
+                            <a href="https://wa.me/201070000806?text=I'm Interested in 'Vye' prices" target="_blank" class="project-btn whatsapp-btn">
+                                <i class="fab fa-whatsapp"></i> واتس اب
+                            </a>
+                            <a href="tel:01070000806" class="project-btn call-btn-project">
+                                <i class="fas fa-phone"></i> اتصل
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 2 - Karmell -->
+                <div class="project-card">
+                    <div class="project-image" style="background: linear-gradient(135deg, #B9A25A 0%, #9B8847 100%); height: 250px; border-radius: 12px 12px 0 0; display: flex; align-items: center; justify-content: center; color: white; font-size: 18px;">
+                        <img src="images/karmell.jpg" alt="Karmell" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Karmell</h3>
+                        <p class="project-location"><i class="fas fa-map-marker-alt" style="color: #B9A25A; margin-left: 8px;"></i>New Zayed</p>
+                        <div style="font-size: 14px; color: #555; line-height: 1.8; margin-bottom: 20px;">
+                            <div><strong>الوحدات المتوفرة:</strong> Town, Twin, Standalone & Apartments</div>
+                            <div><strong>المقدم:</strong> 5%</div>
+                            <div><strong>أقساط:</strong> 10 سنوات</div>
+                            <div><strong>أسعار تبدأ من:</strong> 14,000,000 جنيه</div>
+                        </div>
+                        <div class="project-buttons">
+                            <a href="https://wa.me/201070000806?text=I'm Interested in 'Karmell' prices" target="_blank" class="project-btn whatsapp-btn">
+                                <i class="fab fa-whatsapp"></i> واتس اب
+                            </a>
+                            <a href="tel:01070000806" class="project-btn call-btn-project">
+                                <i class="fas fa-phone"></i> اتصل
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 3 - The Estates -->
+                <div class="project-card">
+                    <div class="project-image" style="background: linear-gradient(135deg, #B9A25A 0%, #9B8847 100%); height: 250px; border-radius: 12px 12px 0 0; display: flex; align-items: center; justify-content: center; color: white; font-size: 18px;">
+                        <img src="images/the-estates.jpg" alt="The Estates" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">The Estates</h3>
+                        <p class="project-location"><i class="fas fa-map-marker-alt" style="color: #B9A25A; margin-left: 8px;"></i>New Zayed</p>
+                        <div style="font-size: 14px; color: #555; line-height: 1.8; margin-bottom: 20px;">
+                            <div><strong>الوحدات المتوفرة:</strong> Standalone Villas</div>
+                            <div><strong>المقدم:</strong> 5%</div>
+                            <div><strong>أقساط:</strong> 8 سنوات</div>
+                            <div><strong>أسعار تبدأ من:</strong> 80,000,000 جنيه</div>
+                        </div>
+                        <div class="project-buttons">
+                            <a href="https://wa.me/201070000806?text=I'm Interested in 'The Estates' prices" target="_blank" class="project-btn whatsapp-btn">
+                                <i class="fab fa-whatsapp"></i> واتس اب
+                            </a>
+                            <a href="tel:01070000806" class="project-btn call-btn-project">
+                                <i class="fas fa-phone"></i> اتصل
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 4 - The Estates Residence -->
+                <div class="project-card">
+                    <div class="project-image" style="background: linear-gradient(135deg, #B9A25A 0%, #9B8847 100%); height: 250px; border-radius: 12px 12px 0 0; display: flex; align-items: center; justify-content: center; color: white; font-size: 18px;">
+                        <img src="images/the-estates-residence.jpg" alt="The Estates Residence" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">The Estates Residence</h3>
+                        <p class="project-location"><i class="fas fa-map-marker-alt" style="color: #B9A25A; margin-left: 8px;"></i>New Zayed</p>
+                        <div style="font-size: 14px; color: #555; line-height: 1.8; margin-bottom: 20px;">
+                            <div><strong>الوحدات المتوفرة:</strong> Apartments & Villas (Fully Finished)</div>
+                            <div><strong>المقدم:</strong> 5%</div>
+                            <div><strong>أقساط:</strong> 10 سنوات</div>
+                            <div><strong>أسعار تبدأ من:</strong> 22,000,000 جنيه</div>
+                        </div>
+                        <div class="project-buttons">
+                            <a href="https://wa.me/201070000806?text=I'm Interested in 'The Estates Residence' prices" target="_blank" class="project-btn whatsapp-btn">
+                                <i class="fab fa-whatsapp"></i> واتس اب
+                            </a>
+                            <a href="tel:01070000806" class="project-btn call-btn-project">
+                                <i class="fas fa-phone"></i> اتصل
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 5 - Ogami -->
+                <div class="project-card">
+                    <div class="project-image" style="background: linear-gradient(135deg, #B9A25A 0%, #9B8847 100%); height: 250px; border-radius: 12px 12px 0 0; display: flex; align-items: center; justify-content: center; color: white; font-size: 18px;">
+                        <img src="images/ogami.jpg" alt="Ogami" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Ogami</h3>
+                        <p class="project-location"><i class="fas fa-map-marker-alt" style="color: #B9A25A; margin-left: 8px;"></i>Ras El Hekma</p>
+                        <div style="font-size: 14px; color: #555; line-height: 1.8; margin-bottom: 20px;">
+                            <div><strong>الوحدات المتوفرة:</strong> Chalets & Villas</div>
+                            <div><strong>المقدم:</strong> 5%</div>
+                            <div><strong>أقساط:</strong> 8 سنوات</div>
+                            <div><strong>أسعار تبدأ من:</strong> 24,000,000 جنيه</div>
+                        </div>
+                        <div class="project-buttons">
+                            <a href="https://wa.me/201070000806?text=I'm Interested in 'Ogami' prices" target="_blank" class="project-btn whatsapp-btn">
+                                <i class="fab fa-whatsapp"></i> واتس اب
+                            </a>
+                            <a href="tel:01070000806" class="project-btn call-btn-project">
+                                <i class="fas fa-phone"></i> اتصل
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 6 - Sodic East -->
+                <div class="project-card">
+                    <div class="project-image" style="background: linear-gradient(135deg, #B9A25A 0%, #9B8847 100%); height: 250px; border-radius: 12px 12px 0 0; display: flex; align-items: center; justify-content: center; color: white; font-size: 18px;">
+                        <img src="images/sodic-east.jpg" alt="Sodic East" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Sodic East</h3>
+                        <p class="project-location"><i class="fas fa-map-marker-alt" style="color: #B9A25A; margin-left: 8px;"></i>El Sherouk</p>
+                        <div style="font-size: 14px; color: #555; line-height: 1.8; margin-bottom: 20px;">
+                            <div><strong>الوحدات المتوفرة:</strong> Apartments (Core & Shell + Fully Finished)</div>
+                            <div><strong>المقدم:</strong> 5%</div>
+                            <div><strong>أقساط:</strong> 8 سنوات</div>
+                            <div><strong>أسعار تبدأ من:</strong> 14,000,000 جنيه</div>
+                        </div>
+                        <div class="project-buttons">
+                            <a href="https://wa.me/201070000806?text=I'm Interested in 'Sodic East' prices" target="_blank" class="project-btn whatsapp-btn">
+                                <i class="fab fa-whatsapp"></i> واتس اب
+                            </a>
+                            <a href="tel:01070000806" class="project-btn call-btn-project">
+                                <i class="fas fa-phone"></i> اتصل
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 7 - June -->
+                <div class="project-card">
+                    <div class="project-image" style="background: linear-gradient(135deg, #B9A25A 0%, #9B8847 100%); height: 250px; border-radius: 12px 12px 0 0; display: flex; align-items: center; justify-content: center; color: white; font-size: 18px;">
+                        <img src="images/june.jpg" alt="June" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">June</h3>
+                        <p class="project-location"><i class="fas fa-map-marker-alt" style="color: #B9A25A; margin-left: 8px;"></i>North Coast – Ras El Hekma</p>
+                        <div style="font-size: 14px; color: #555; line-height: 1.8; margin-bottom: 20px;">
+                            <div><strong>الوحدات المتوفرة:</strong> Chalets & Townhouses</div>
+                            <div><strong>المقدم:</strong> 5%</div>
+                            <div><strong>أقساط:</strong> 7 سنوات</div>
+                            <div><strong>أسعار تبدأ من:</strong> 22,000,000 جنيه</div>
+                        </div>
+                        <div class="project-buttons">
+                            <a href="https://wa.me/201070000806?text=I'm Interested in 'June' prices" target="_blank" class="project-btn whatsapp-btn">
+                                <i class="fab fa-whatsapp"></i> واتس اب
+                            </a>
+                            <a href="tel:01070000806" class="project-btn call-btn-project">
+                                <i class="fas fa-phone"></i> اتصل
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 8 - Eastvalle -->
+                <div class="project-card">
+                    <div class="project-image" style="background: linear-gradient(135deg, #B9A25A 0%, #9B8847 100%); height: 250px; border-radius: 12px 12px 0 0; display: flex; align-items: center; justify-content: center; color: white; font-size: 18px;">
+                        <img src="images/eastvalle.jpg" alt="Eastvalle" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Eastvalle</h3>
+                        <p class="project-location"><i class="fas fa-map-marker-alt" style="color: #B9A25A; margin-left: 8px;"></i>El Mostakbal City</p>
+                        <div style="font-size: 14px; color: #555; line-height: 1.8; margin-bottom: 20px;">
+                            <div><strong>الوحدات المتوفرة:</strong> Apartments & Villas (Fully Finished)</div>
+                            <div><strong>المقدم:</strong> 5%</div>
+                            <div><strong>أقساط:</strong> 8 سنوات</div>
+                            <div><strong>أسعار تبدأ من:</strong> 11,000,000 جنيه</div>
+                        </div>
+                        <div class="project-buttons">
+                            <a href="https://wa.me/201070000806?text=I'm Interested in 'Eastvalle' prices" target="_blank" class="project-btn whatsapp-btn">
+                                <i class="fab fa-whatsapp"></i> واتس اب
+                            </a>
+                            <a href="tel:01070000806" class="project-btn call-btn-project">
+                                <i class="fas fa-phone"></i> اتصل
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Sodic Section -->
+    <section class="container" id="whySodicSection" style="margin: 60px auto; max-width: 1200px; text-align: center;">
+        <h2 class="section-title">ليه سوديك</h2>
+        <p style="text-align: center; margin-bottom: 50px; font-size: 16px; color: #666; max-width: 800px; margin-left: auto; margin-right: auto;">سوديك توفر لك أفضل المشاريع السكنية الفاخرة مع مستويات عالية من الجودة والخدمة</p>
+        <div class="features-grid">
+            <div class="feature-card">
+                <i class="fas fa-building" style="color: #B9A25A;"></i>
+                <h3>مشاريع فاخرة ومتميزة</h3>
+                <p>تصاميم معمارية عصرية وحديثة توفر أفضل تجربة سكنية مع مرافق عالمية المستوى</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-map-marker-alt" style="color: #B9A25A;"></i>
+                <h3>مواقع استراتيجية</h3>
+                <p>توقع في أفضل الأماكن قريبة من المراكز التجارية والتعليمية والخدمات الأساسية</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-heart" style="color: #B9A25A;"></i>
+                <h3>بيئة آمنة وصحية</h3>
+                <p>مجتمعات مغلقة آمنة مع مساحات خضراء واسعة وأنظمة أمان متقدمة</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-wallet" style="color: #B9A25A;"></i>
+                <h3> خطط سداد مرنه</h3>
+                <p>خيارات دفع مرنة تبدأ من 5% مقدم فقط مع فترات سداد تصل إلى 10 سنوات</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-phone" style="color: #B9A25A;"></i>
+                <h3>خدمة عملاء متميزة</h3>
+                <p>فريق متخصص جاهز للإجابة على جميع استفساراتك وتقديم الدعم الكامل</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-trophy" style="color: #B9A25A;"></i>
+                <h3>سمعة عريقة وموثوقة</h3>
+                <p>سوديك تتمتع بخبرة طويلة وسمعة طيبة في تطوير المشاريع العقارية المميزة</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallerySection" style="background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%); padding: 80px 20px; position: relative; overflow: hidden;">
+        <div style="position: absolute; top: -50%; right: -10%; width: 500px; height: 500px; background: radial-gradient(circle, rgba(185, 162, 90, 0.1) 0%, transparent 70%); border-radius: 50%;"></div>
+        <div style="position: absolute; bottom: -30%; left: -5%; width: 400px; height: 400px; background: radial-gradient(circle, rgba(185, 162, 90, 0.08) 0%, transparent 70%); border-radius: 50%;"></div>
+        
+        <div class="container" style="max-width: 1200px; margin: 0 auto; position: relative; z-index: 1;">
+            <h2 class="section-title" style="color: white; margin-bottom: 50px;">معرض الصور</h2>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 25px;">
+                <!-- Gallery Item 1 -->
+                <div class="gallery-item">
+                    <div class="gallery-image-wrapper">
+                        <img src="images/gallery/g1.jpg" alt="Gallery Image 1" style="width: 100%; height: 250px; object-fit: cover; display: block;">
+                        <div class="gallery-overlay">
+                            <a href="images/gallery/g1.jpg" class="gallery-link gallery-lightbox" data-gallery="gallery1"><i class="fas fa-search-plus"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 2 -->
+                <div class="gallery-item">
+                    <div class="gallery-image-wrapper">
+                        <img src="images/gallery/g2.jpg" alt="Gallery Image 2" style="width: 100%; height: 250px; object-fit: cover; display: block;">
+                        <div class="gallery-overlay">
+                            <a href="images/gallery/g2.jpg" class="gallery-link gallery-lightbox" data-gallery="gallery1"><i class="fas fa-search-plus"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 3 -->
+                <div class="gallery-item">
+                    <div class="gallery-image-wrapper">
+                        <img src="images/gallery/g3.jpg" alt="Gallery Image 3" style="width: 100%; height: 250px; object-fit: cover; display: block;">
+                        <div class="gallery-overlay">
+                            <a href="images/gallery/g3.jpg" class="gallery-link gallery-lightbox" data-gallery="gallery1"><i class="fas fa-search-plus"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 4 -->
+                <div class="gallery-item">
+                    <div class="gallery-image-wrapper">
+                        <img src="images/gallery/g4.jpg" alt="Gallery Image 4" style="width: 100%; height: 250px; object-fit: cover; display: block;">
+                        <div class="gallery-overlay">
+                            <a href="images/gallery/g4.jpg" class="gallery-link gallery-lightbox" data-gallery="gallery1"><i class="fas fa-search-plus"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 5 -->
+                <div class="gallery-item">
+                    <div class="gallery-image-wrapper">
+                        <img src="images/gallery/g5.jpg" alt="Gallery Image 5" style="width: 100%; height: 250px; object-fit: cover; display: block;">
+                        <div class="gallery-overlay">
+                            <a href="images/gallery/g5.jpg" class="gallery-link gallery-lightbox" data-gallery="gallery1"><i class="fas fa-search-plus"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 6 -->
+                <div class="gallery-item">
+                    <div class="gallery-image-wrapper">
+                        <img src="images/gallery/g6.jpg" alt="Gallery Image 6" style="width: 100%; height: 250px; object-fit: cover; display: block;">
+                        <div class="gallery-overlay">
+                            <a href="images/gallery/g6.jpg" class="gallery-link gallery-lightbox" data-gallery="gallery1"><i class="fas fa-search-plus"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 7 -->
+                <div class="gallery-item">
+                    <div class="gallery-image-wrapper">
+                        <img src="images/gallery/g7.jpg" alt="Gallery Image 7" style="width: 100%; height: 250px; object-fit: cover; display: block;">
+                        <div class="gallery-overlay">
+                            <a href="images/gallery/g7.jpg" class="gallery-link gallery-lightbox" data-gallery="gallery1"><i class="fas fa-search-plus"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 8 -->
+                <div class="gallery-item">
+                    <div class="gallery-image-wrapper">
+                        <img src="images/gallery/g8.jpg" alt="Gallery Image 8" style="width: 100%; height: 250px; object-fit: cover; display: block;">
+                        <div class="gallery-overlay">
+                            <a href="images/gallery/g8.jpg" class="gallery-link gallery-lightbox" data-gallery="gallery1"><i class="fas fa-search-plus"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 9 -->
+                <div class="gallery-item">
+                    <div class="gallery-image-wrapper">
+                        <img src="images/gallery/g9.jpg" alt="Gallery Image 9" style="width: 100%; height: 250px; object-fit: cover; display: block;">
+                        <div class="gallery-overlay">
+                            <a href="images/gallery/g9.jpg" class="gallery-link gallery-lightbox" data-gallery="gallery1"><i class="fas fa-search-plus"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 10 -->
+                <div class="gallery-item">
+                    <div class="gallery-image-wrapper">
+                        <img src="images/gallery/g10.jpg" alt="Gallery Image 10" style="width: 100%; height: 250px; object-fit: cover; display: block;">
+                        <div class="gallery-overlay">
+                            <a href="images/gallery/g10.jpg" class="gallery-link gallery-lightbox" data-gallery="gallery1"><i class="fas fa-search-plus"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 11 -->
+                <div class="gallery-item">
+                    <div class="gallery-image-wrapper">
+                        <img src="images/gallery/g11.jpg" alt="Gallery Image 11" style="width: 100%; height: 250px; object-fit: cover; display: block;">
+                        <div class="gallery-overlay">
+                            <a href="images/gallery/g11.jpg" class="gallery-link gallery-lightbox" data-gallery="gallery1"><i class="fas fa-search-plus"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   <!-- Contact Form Section -->
+<section id="contactFormSection" style="padding: 80px 20px; background: white;">
+  <div class="container" style="max-width: 700px; margin: 0 auto;">
+    <h2 class="section-title" style="margin-bottom: 50px;">سجل بياناتك الآن</h2>
+    <p style="text-align: center; margin-bottom: 40px; color: #666; font-size: 16px;">
+      املأ البيانات التالية وسنتواصل معك قريباً بأفضل العروض
+    </p>
+
+    <form
+      id="contactForm"
+      method="POST"
+      action="https://formsubmit.co/ahmedmeneim84@gmail.com"
+      style="background: #f9f9f9; padding: 40px; border-radius: 12px; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);"
+    >
+
+      <!-- ✅ Redirect after submit -->
+      <input type="hidden" name="_next" value="thank-you.html">
+
+      <!-- ✅ Email subject -->
+      <input type="hidden" name="_subject" value="New Lead - Univers Estate Realty">
+
+      <!-- ✅ CC & BCC -->
+      <input type="hidden" name="_cc" value="Universeestate2@gmail.com">
+
+      <!-- ✅ Optional: disable captcha -->
+      <input type="hidden" name="_captcha" value="false">
+
+      <!-- ✅ Optional: template -->
+      <input type="hidden" name="_template" value="table">
+
+      <!-- Name Field -->
+      <div style="margin-bottom: 25px;">
+        <label for="name" style="display: block; margin-bottom: 10px; font-weight: bold; color: #333;">الاسم الكامل *</label>
+        <input type="text" id="name" name="name" required
+          style="width: 100%; padding: 14px 16px; border: 2px solid #e0e0e0; border-radius: 8px; font-size: 14px; transition: all 0.3s; box-sizing: border-box;"
+          placeholder="أدخل اسمك الكامل">
+      </div>
+
+      <!-- Phone Field -->
+      <div style="margin-bottom: 25px;">
+        <label for="phone" style="display: block; margin-bottom: 10px; font-weight: bold; color: #333;">رقم الهاتف *</label>
+        <input type="tel" id="phone" name="phone" required
+          style="width: 100%; padding: 14px 16px; border: 2px solid #e0e0e0; border-radius: 8px; font-size: 14px; transition: all 0.3s; box-sizing: border-box;"
+          placeholder="أدخل رقم هاتفك">
+      </div>
+
+      <!-- Email Field -->
+      <div style="margin-bottom: 25px;">
+        <label for="email" style="display: block; margin-bottom: 10px; font-weight: bold; color: #333;">البريد الإلكتروني (اختياري)</label>
+        <input type="email" id="email" name="email"
+          style="width: 100%; padding: 14px 16px; border: 2px solid #e0e0e0; border-radius: 8px; font-size: 14px; transition: all 0.3s; box-sizing: border-box;"
+          placeholder="أدخل بريدك الإلكتروني">
+      </div>
+
+      <!-- Project Selection -->
+      <div style="margin-bottom: 25px;">
+        <label for="project" style="display: block; margin-bottom: 10px; font-weight: bold; color: #333;">اختر المشروع *</label>
+        <select id="project" name="project" required
+          style="width: 100%; padding: 14px 16px; border: 2px solid #e0e0e0; border-radius: 8px; font-size: 14px; transition: all 0.3s; box-sizing: border-box; background: white; cursor: pointer;">
+          <option value="">-- اختر المشروع --</option>
+          <option value="Vye">Vye</option>
+          <option value="Karmell">Karmell</option>
+          <option value="The Estates">The Estates</option>
+          <option value="The Estates Residence">The Estates Residence</option>
+          <option value="Ogami">Ogami</option>
+          <option value="Sodic East">Sodic East</option>
+          <option value="June">June</option>
+          <option value="Eastvalle">Eastvalle</option>
+        </select>
+      </div>
+
+      <!-- Message Field -->
+      <div style="margin-bottom: 30px;">
+        <label for="message" style="display: block; margin-bottom: 10px; font-weight: bold; color: #333;">رسالتك (اختياري)</label>
+        <textarea id="message" name="message"
+          style="width: 100%; padding: 14px 16px; border: 2px solid #e0e0e0; border-radius: 8px; font-size: 14px; transition: all 0.3s; box-sizing: border-box; resize: vertical; min-height: 120px;"
+          placeholder="اكتب أي تفاصيل إضافية أو استفسارات"></textarea>
+      </div>
+
+      <!-- Submit Button (Disabled for now) -->
+      <button type="submit" 
+        style="width: 100%; padding: 16px; background-color: #B9A25A; color: white; border: none; border-radius: 8px; font-size: 16px; font-weight: bold; cursor: pointer; opacity: 1; transition: all 0.3s; box-sizing: border-box;">
+        <i class="fas fa-paper-plane" style="margin-left: 8px;"></i> إرسال البيانات
+      </button>
+
+      
+    </form>
+  </div>
+</section>
+
+    <!-- Footer -->
+    <footer style="background-color: #000000 !important;">
+        <div class="container" style="padding: 40px 20px;">
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 40px; margin-bottom: 40px;">
+                <!-- Logo Section -->
+                <div>
+                    <img src="" alt="Univers Estate" style="height: 50px; margin-bottom: 20px;">
+                    <p style="font-size: 14px; line-height: 1.8;">شركة Univers Estate متخصصة في التسويق والوساطة العقارية، نقدم أفضل المشاريع السكنية والتجارية الفاخرة في أفضل المواقع الاستراتيجية.</p>
+                </div>
+
+                <!-- Links Section -->
+                <div>
+                    <h4 style="margin-bottom: 20px; font-size: 16px;">الروابط السريعة</h4>
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="margin-bottom: 10px;"><a href="index.html" style="color: white; text-decoration: none;">الرئيسية</a></li>
+                        <li style="margin-bottom: 10px;"><a href="about-us.html" style="color: white; text-decoration: none;">عن الشركة</a></li>
+                        <li style="margin-bottom: 10px;"><a href="contact-us.html" style="color: white; text-decoration: none;">اتصل بنا</a></li>
+                        <li style="margin-bottom: 10px;"><a href="privacy.html" style="color: white; text-decoration: none;">سياسية الخصوصية</a></li>
+                        <li style="margin-bottom: 10px;"><a href="disclaimer.html" style="color: white; text-decoration: none;">إخلاء المسئولية</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Section -->
+                <div>
+                    <h4 style="margin-bottom: 20px; font-size: 16px;">تواصل معنا</h4>
+                    <p style="margin-bottom: 15px; font-size: 14px;">
+                        <i class="fas fa-map-marker-alt" style="color: white; margin-left: 10px;"></i>
+                         7212 Elmearag Elsofly
+5
+Maadi
+Giza Governorate 12345
+Egypt  
+                    </p>
+                    <p style="margin-bottom: 15px; font-size: 14px;">
+                        <i class="fas fa-phone" style="color: white; margin-left: 10px;"></i>
+                        <a href="tel:01070000806" style="color: white; text-decoration: none;">01070000806</a>
+                    </p>
+                    <p style="margin-bottom: 15px; font-size: 14px;">
+                        <i class="fas fa-envelope" style="color: white; margin-left: 10px;"></i>
+                    </p>
+                </div>
+            </div>
+
+            <!-- Divider -->
+            <div style="border-top: 1px solid rgba(255, 255, 255, 0.1); padding: 20px 0; text-align: center;">
+                <p style="font-size: 12px; color: rgba(255, 255, 255, 0.7); margin-bottom: 10px;">
+                    &copy; 2026 Univers Estate للتسويق والوساطة العقارية. جميع الحقوق محفوظة.
+                </p>
+                <p style="font-size: 11px; color: rgba(255, 255, 255, 0.6); line-height: 1.6;">
+                    <strong>إخلاء مسؤولية:</strong> جميع المعلومات والأسعار والعروض على هذا الموقع لأغراض إعلامية فقط وقد تكون عرضة للتغيير دون إشعار مسبق. 
+                    نحن لا نتحمل مسؤولية أي أضرار قد تنشأ عن استخدام هذا الموقع أو المعلومات المنشورة عليه. 
+                    يرجى التحقق من جميع التفاصيل مع فريقنا قبل اتخاذ أي قرار استثماري. 
+                    <a href="disclaimer.html" style="color: white; text-decoration: underline;">اقرأ إخلاء المسئولية الكامل</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+        // Mobile Menu Toggle
+        const menuToggle = document.getElementById('menuToggle');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const menuOverlay = document.getElementById('menuOverlay');
+
+        menuToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('active');
+            menuOverlay.classList.toggle('active');
+        });
+
+        // Close menu when clicking on a link
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.remove('active');
+                menuOverlay.classList.remove('active');
+            });
+        });
+
+        // Close menu when clicking overlay
+        menuOverlay.addEventListener('click', () => {
+            mobileMenu.classList.remove('active');
+            menuOverlay.classList.remove('active');
+        });
+
+        // Hide/Show navbar on scroll
+        let lastScrollTop = 0;
+        const header = document.querySelector('header');
+
+        window.addEventListener('scroll', () => {
+            let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+            
+            if (currentScroll > lastScrollTop && currentScroll > 100) {
+                // Scrolling down
+                header.classList.add('hidden');
+            } else {
+                // Scrolling up
+                header.classList.remove('hidden');
+            }
+            
+            lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
+        });
+
+    </script>
+
+    <!-- GLightbox Script -->
+    <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+    <script>
+        const lightbox = GLightbox({
+            selector: '.gallery-lightbox',
+            touchNavigation: true,
+            loop: true,
+            autoplayVideos: true
+        });
+    </script>
+
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/201070000806?text=مرحبا" target="_blank" class="whatsapp-button" title="اتصل بنا عبر واتس اب">
+        <i class="fab fa-whatsapp"></i>
+        <span class="whatsapp-button-label">01070000806</span>
+    </a>
+</body>
+</html>
