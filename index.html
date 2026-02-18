@@ -248,6 +248,108 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             line-height: 1.6;
         }
 
+        #whySodicSection {
+            margin: 60px auto;
+            max-width: 1200px;
+            padding: 0 20px;
+        }
+
+        .sodic-numbers-panel {
+            display: flex;
+            direction: ltr;
+            background: #2F3136;
+            border-radius: 0;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .sodic-numbers-title {
+            width: 260px;
+            background: #63B2D6;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            text-align: left;
+            padding: 30px 20px;
+            font-size: clamp(30px, 3vw, 42px);
+            font-weight: 700;
+            line-height: 1.15;
+            letter-spacing: 1px;
+            flex-shrink: 0;
+            overflow-wrap: anywhere;
+        }
+
+        .sodic-numbers-grid {
+            flex: 1;
+            display: grid;
+            grid-template-columns: repeat(5, minmax(120px, 1fr));
+            gap: 18px 10px;
+            padding: 24px 26px;
+            align-items: center;
+        }
+
+        .sodic-metric {
+            text-align: left;
+            color: white;
+        }
+
+        .sodic-metric-value {
+            font-size: 44px;
+            font-weight: 700;
+            line-height: 1;
+            letter-spacing: 0.5px;
+            margin-bottom: 4px;
+            text-transform: uppercase;
+        }
+
+        .sodic-metric-label {
+            font-size: 10px;
+            color: rgba(255, 255, 255, 0.75);
+            line-height: 1.3;
+            text-transform: uppercase;
+            letter-spacing: 0.6px;
+            max-width: 170px;
+        }
+
+        @media (max-width: 992px) {
+            .sodic-numbers-panel {
+                flex-direction: column;
+            }
+
+            .sodic-numbers-title {
+                width: 100%;
+                align-items: center;
+                text-align: center;
+                font-size: 34px;
+                padding: 18px 20px;
+            }
+
+            .sodic-numbers-grid {
+                grid-template-columns: repeat(3, minmax(120px, 1fr));
+            }
+        }
+
+        @media (max-width: 640px) {
+            #whySodicSection {
+                padding: 0 14px;
+            }
+
+            .sodic-numbers-grid {
+                grid-template-columns: repeat(2, minmax(120px, 1fr));
+                padding: 18px;
+            }
+
+            .sodic-metric-value {
+                font-size: 34px;
+            }
+
+            .sodic-metric-label {
+                font-size: 9px;
+            }
+        }
+
         .cta-btn {
             background-color: #B9A25A;
             color: white;
@@ -284,6 +386,20 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         .project-image {
             position: relative;
             overflow: hidden;
+        }
+
+        .project-badge {
+            position: absolute;
+            top: 12px;
+            right: 12px;
+            background-color: #B9A25A;
+            color: white;
+            padding: 6px 12px;
+            border-radius: 999px;
+            font-size: 12px;
+            font-weight: bold;
+            z-index: 2;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
         }
 
         .project-image::after {
@@ -617,6 +733,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <div class="project-card">
                     <div class="project-image" style="background: linear-gradient(135deg, #B9A25A 0%, #9B8847 100%); height: 250px; border-radius: 12px 12px 0 0; display: flex; align-items: center; justify-content: center; color: white; font-size: 18px;">
                         <img src="images/vye.jpg" alt="Vye" style="width: 100%; height: 100%; object-fit: cover;">
+                        <span class="project-badge">Fully Finished</span>
                     </div>
                     <div class="project-content">
                         <h3 class="project-title">Vye</h3>
@@ -642,9 +759,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <div class="project-card">
                     <div class="project-image" style="background: linear-gradient(135deg, #B9A25A 0%, #9B8847 100%); height: 250px; border-radius: 12px 12px 0 0; display: flex; align-items: center; justify-content: center; color: white; font-size: 18px;">
                         <img src="images/karmell.jpg" alt="Karmell" style="width: 100%; height: 100%; object-fit: cover;">
+                        <span class="project-badge">Fully Finished</span>
                     </div>
                     <div class="project-content">
-                        <h3 class="project-title">Karmell</h3>
+                        <h3 class="project-title">karmell</h3>
                         <p class="project-location"><i class="fas fa-map-marker-alt" style="color: #B9A25A; margin-left: 8px;"></i>New Zayed</p>
                         <div style="font-size: 14px; color: #555; line-height: 1.8; margin-bottom: 20px;">
                             <div><strong>الوحدات المتوفرة:</strong> Town, Twin, Standalone & Apartments</div>
@@ -669,7 +787,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         <img src="images/the-estates.jpg" alt="The Estates" style="width: 100%; height: 100%; object-fit: cover;">
                     </div>
                     <div class="project-content">
-                        <h3 class="project-title">The Estates</h3>
+                        <h3 class="project-title">the estates</h3>
                         <p class="project-location"><i class="fas fa-map-marker-alt" style="color: #B9A25A; margin-left: 8px;"></i>New Zayed</p>
                         <div style="font-size: 14px; color: #555; line-height: 1.8; margin-bottom: 20px;">
                             <div><strong>الوحدات المتوفرة:</strong> Standalone Villas</div>
@@ -692,9 +810,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <div class="project-card">
                     <div class="project-image" style="background: linear-gradient(135deg, #B9A25A 0%, #9B8847 100%); height: 250px; border-radius: 12px 12px 0 0; display: flex; align-items: center; justify-content: center; color: white; font-size: 18px;">
                         <img src="images/the-estates-residence.jpg" alt="The Estates Residence" style="width: 100%; height: 100%; object-fit: cover;">
+                        <span class="project-badge">Fully Finished</span>
                     </div>
                     <div class="project-content">
-                        <h3 class="project-title">The Estates Residence</h3>
+                        <h3 class="project-title">the estates residence</h3>
                         <p class="project-location"><i class="fas fa-map-marker-alt" style="color: #B9A25A; margin-left: 8px;"></i>New Zayed</p>
                         <div style="font-size: 14px; color: #555; line-height: 1.8; margin-bottom: 20px;">
                             <div><strong>الوحدات المتوفرة:</strong> Apartments & Villas (Fully Finished)</div>
@@ -717,9 +836,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <div class="project-card">
                     <div class="project-image" style="background: linear-gradient(135deg, #B9A25A 0%, #9B8847 100%); height: 250px; border-radius: 12px 12px 0 0; display: flex; align-items: center; justify-content: center; color: white; font-size: 18px;">
                         <img src="images/ogami.jpg" alt="Ogami" style="width: 100%; height: 100%; object-fit: cover;">
+                        <span class="project-badge">Fully Finished</span>
                     </div>
                     <div class="project-content">
-                        <h3 class="project-title">Ogami</h3>
+                        <h3 class="project-title">ogami</h3>
                         <p class="project-location"><i class="fas fa-map-marker-alt" style="color: #B9A25A; margin-left: 8px;"></i>Ras El Hekma</p>
                         <div style="font-size: 14px; color: #555; line-height: 1.8; margin-bottom: 20px;">
                             <div><strong>الوحدات المتوفرة:</strong> Chalets & Villas</div>
@@ -742,9 +862,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <div class="project-card">
                     <div class="project-image" style="background: linear-gradient(135deg, #B9A25A 0%, #9B8847 100%); height: 250px; border-radius: 12px 12px 0 0; display: flex; align-items: center; justify-content: center; color: white; font-size: 18px;">
                         <img src="images/sodic-east.jpg" alt="Sodic East" style="width: 100%; height: 100%; object-fit: cover;">
+                        <span class="project-badge">Fully Finished</span>
                     </div>
                     <div class="project-content">
-                        <h3 class="project-title">Sodic East</h3>
+                        <h3 class="project-title">sodic east</h3>
                         <p class="project-location"><i class="fas fa-map-marker-alt" style="color: #B9A25A; margin-left: 8px;"></i>El Sherouk</p>
                         <div style="font-size: 14px; color: #555; line-height: 1.8; margin-bottom: 20px;">
                             <div><strong>الوحدات المتوفرة:</strong> Apartments (Core & Shell + Fully Finished)</div>
@@ -767,9 +888,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <div class="project-card">
                     <div class="project-image" style="background: linear-gradient(135deg, #B9A25A 0%, #9B8847 100%); height: 250px; border-radius: 12px 12px 0 0; display: flex; align-items: center; justify-content: center; color: white; font-size: 18px;">
                         <img src="images/june.jpg" alt="June" style="width: 100%; height: 100%; object-fit: cover;">
+                        <span class="project-badge">Fully Finished</span>
                     </div>
                     <div class="project-content">
-                        <h3 class="project-title">June</h3>
+                        <h3 class="project-title">june</h3>
                         <p class="project-location"><i class="fas fa-map-marker-alt" style="color: #B9A25A; margin-left: 8px;"></i>North Coast – Ras El Hekma</p>
                         <div style="font-size: 14px; color: #555; line-height: 1.8; margin-bottom: 20px;">
                             <div><strong>الوحدات المتوفرة:</strong> Chalets & Townhouses</div>
@@ -792,9 +914,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <div class="project-card">
                     <div class="project-image" style="background: linear-gradient(135deg, #B9A25A 0%, #9B8847 100%); height: 250px; border-radius: 12px 12px 0 0; display: flex; align-items: center; justify-content: center; color: white; font-size: 18px;">
                         <img src="images/eastvalle.jpg" alt="Eastvalle" style="width: 100%; height: 100%; object-fit: cover;">
+                        <span class="project-badge">Fully Finished</span>
                     </div>
                     <div class="project-content">
-                        <h3 class="project-title">Eastvalle</h3>
+                        <h3 class="project-title">East Vale</h3>
                         <p class="project-location"><i class="fas fa-map-marker-alt" style="color: #B9A25A; margin-left: 8px;"></i>El Mostakbal City</p>
                         <div style="font-size: 14px; color: #555; line-height: 1.8; margin-bottom: 20px;">
                             <div><strong>الوحدات المتوفرة:</strong> Apartments & Villas (Fully Finished)</div>
@@ -817,39 +940,55 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </section>
 
     <!-- Why Choose Sodic Section -->
-    <section class="container" id="whySodicSection" style="margin: 60px auto; max-width: 1200px; text-align: center;">
+    <section id="whySodicSection">
         <h2 class="section-title">ليه سوديك</h2>
-        <p style="text-align: center; margin-bottom: 50px; font-size: 16px; color: #666; max-width: 800px; margin-left: auto; margin-right: auto;">سوديك توفر لك أفضل المشاريع السكنية الفاخرة مع مستويات عالية من الجودة والخدمة</p>
-        <div class="features-grid">
-            <div class="feature-card">
-                <i class="fas fa-building" style="color: #B9A25A;"></i>
-                <h3>مشاريع فاخرة ومتميزة</h3>
-                <p>تصاميم معمارية عصرية وحديثة توفر أفضل تجربة سكنية مع مرافق عالمية المستوى</p>
+        <div class="sodic-numbers-panel" aria-label="سوديك بالأرقام">
+            <div class="sodic-numbers-title">
+                <span>Sodic In </span>
+                <span>Numbers</span>
             </div>
-            <div class="feature-card">
-                <i class="fas fa-map-marker-alt" style="color: #B9A25A;"></i>
-                <h3>مواقع استراتيجية</h3>
-                <p>توقع في أفضل الأماكن قريبة من المراكز التجارية والتعليمية والخدمات الأساسية</p>
-            </div>
-            <div class="feature-card">
-                <i class="fas fa-heart" style="color: #B9A25A;"></i>
-                <h3>بيئة آمنة وصحية</h3>
-                <p>مجتمعات مغلقة آمنة مع مساحات خضراء واسعة وأنظمة أمان متقدمة</p>
-            </div>
-            <div class="feature-card">
-                <i class="fas fa-wallet" style="color: #B9A25A;"></i>
-                <h3> خطط سداد مرنه</h3>
-                <p>خيارات دفع مرنة تبدأ من 5% مقدم فقط مع فترات سداد تصل إلى 10 سنوات</p>
-            </div>
-            <div class="feature-card">
-                <i class="fas fa-phone" style="color: #B9A25A;"></i>
-                <h3>خدمة عملاء متميزة</h3>
-                <p>فريق متخصص جاهز للإجابة على جميع استفساراتك وتقديم الدعم الكامل</p>
-            </div>
-            <div class="feature-card">
-                <i class="fas fa-trophy" style="color: #B9A25A;"></i>
-                <h3>سمعة عريقة وموثوقة</h3>
-                <p>سوديك تتمتع بخبرة طويلة وسمعة طيبة في تطوير المشاريع العقارية المميزة</p>
+
+            <div class="sodic-numbers-grid">
+                <div class="sodic-metric">
+                    <div class="sodic-metric-value">28</div>
+                    <div class="sodic-metric-label">سنة من الخبرة</div>
+                </div>
+                <div class="sodic-metric">
+                    <div class="sodic-metric-value">+10</div>
+                    <div class="sodic-metric-label">مشروعات</div>
+                </div>
+                <div class="sodic-metric">
+                    <div class="sodic-metric-value">+14K</div>
+                    <div class="sodic-metric-label">وحدة تم تسليمها</div>
+                </div>
+                <div class="sodic-metric">
+                    <div class="sodic-metric-value">+18K</div>
+                    <div class="sodic-metric-label">وحدة تم بيعها</div>
+                </div>
+                <div class="sodic-metric">
+                    <div class="sodic-metric-value">91%</div>
+                    <div class="sodic-metric-label">نسبة تسليم في المواعيد</div>
+                </div>
+                <div class="sodic-metric">
+                    <div class="sodic-metric-value">58</div>
+                    <div class="sodic-metric-label">تقييم رضا العملاء NPS</div>
+                </div>
+                <div class="sodic-metric">
+                    <div class="sodic-metric-value">+17M</div>
+                    <div class="sodic-metric-label">مليون متر مربع محفظة أراضٍ</div>
+                </div>
+                <div class="sodic-metric">
+                    <div class="sodic-metric-value">+70%</div>
+                    <div class="sodic-metric-label">إيرادات متكررة</div>
+                </div>
+                <div class="sodic-metric">
+                    <div class="sodic-metric-value">+30K</div>
+                    <div class="sodic-metric-label">ساكن</div>
+                </div>
+                <div class="sodic-metric">
+                    <div class="sodic-metric-value">+9K</div>
+                    <div class="sodic-metric-label">وحدة تتم إدارتها سنويًا</div>
+                </div>
             </div>
         </div>
     </section>
